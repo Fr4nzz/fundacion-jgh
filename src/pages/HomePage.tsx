@@ -11,6 +11,8 @@ import SectionContainer from "@/components/shared/SectionContainer";
 import SectionHeading from "@/components/shared/SectionHeading";
 import QuoteBlock from "@/components/shared/QuoteBlock";
 import DonationModal from "@/components/shared/DonationModal";
+import ReferencesSection from "@/components/shared/ReferencesSection";
+import TextWithRefs from "@/components/shared/TextWithRefs";
 import { useCountUp } from "@/hooks/useCountUp";
 import { fadeUp, staggerContainer } from "@/lib/animations";
 
@@ -21,6 +23,7 @@ export default function HomePage() {
   const { t } = useTranslation("home");
   const [donateOpen, setDonateOpen] = useState(false);
   const { count, ref: counterRef } = useCountUp(2100, 2000);
+  const references = t("references.items", { returnObjects: true }) as any[];
 
   return (
     <>
@@ -56,7 +59,7 @@ export default function HomePage() {
                       {t(`pillars.${key}.title`)}
                     </h3>
                     <p className="text-sm leading-relaxed text-muted-foreground">
-                      {t(`pillars.${key}.description`)}
+                      <TextWithRefs text={t(`pillars.${key}.description`)} references={references} />
                     </p>
                   </CardContent>
                 </Card>
@@ -74,7 +77,7 @@ export default function HomePage() {
             + {count.toLocaleString()}
           </p>
           <p className="mx-auto mt-4 max-w-lg text-lg leading-relaxed text-muted-foreground">
-            {t("stat.label")}
+            <TextWithRefs text={t("stat.label")} references={references} />
           </p>
           <Separator className="mx-auto mt-8 w-16 bg-secondary" />
         </div>
@@ -123,6 +126,11 @@ export default function HomePage() {
           attribution={t("closingQuote.attribution")}
         />
       </SectionContainer>
+
+      <ReferencesSection
+        title={t("references.title")}
+        items={t("references.items", { returnObjects: true }) as any[]}
+      />
 
       <DonationModal open={donateOpen} onOpenChange={setDonateOpen} />
     </>

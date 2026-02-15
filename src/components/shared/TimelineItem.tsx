@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 
 interface TimelineItemProps {
   date?: string;
-  title: string;
+  title: React.ReactNode;
   children: React.ReactNode;
 }
 

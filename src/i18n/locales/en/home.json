@@ -10,21 +10,21 @@
     "title": "Faith, Science, and Charity",
     "faith": {
       "title": "Faith",
-      "description": "He attended Mass every morning before dawn. He prayed the Angelus on his knees. He tried twice to become a monk. But God had another plan for him: to serve the sick as a doctor."
+      "description": "He attended Mass every morning before dawn. He prayed the Angelus on his knees.[1] He tried twice to become a monk.[3] But God had another plan for him: to serve the sick as a doctor."
     },
     "science": {
       "title": "Science",
-      "description": "He founded the first bacteriology department in all of Latin America. He brought the first microscopes to Venezuela. He studied in Paris under disciples of Pasteur. He was a scientist before he was a saint."
+      "description": "He founded the first bacteriology department in all of Latin America.[2] He brought the first microscopes to Venezuela.[1] He studied in Paris under disciples of Pasteur.[3] He was a scientist before he was a saint."
     },
     "charity": {
       "title": "Charity",
-      "description": "He treated anyone who could not pay free of charge. He bought medicines with his own money. He hung a bag on his door so that patients could take what they needed without shame."
+      "description": "He treated anyone who could not pay free of charge. He bought medicines with his own money.[1] He hung a bag on his door so that patients could take what they needed without shame.[1]"
     }
   },
   "stat": {
     "number": 2100,
     "prefix": "+",
-    "label": "testimonies of favors and healings documented in his cause for canonization. Over a century of intercession. From heaven, the Doctor is still seeing patients."
+    "label": "testimonies of favors and healings documented in his cause for canonization.[4][5] Over a century of intercession. From heaven, the Doctor is still seeing patients."
   },
   "cta": {
     "heading": "His charity did not end in 1919. It continues through those of us who follow his example.",
@@ -35,5 +35,15 @@
   "closingQuote": {
     "text": "There is an infinitely powerful and wise being, creator of the admirably ordered universe we know. This being we call God.",
     "attribution": "San José Gregorio Hernández"
+  },
+  "references": {
+    "title": "Sources and references",
+    "items": [
+      { "source": "JoséGregoriodeVenezuela.com", "desc": "Daily Mass, Angelus, the poor box", "url": "https://www.josegregoriodevenezuela.com/biografia/" },
+      { "source": "Scielo Cuba", "desc": "First bacteriology chair, Secular Franciscan", "url": "http://scielo.sld.cu/scielo.php?script=sci_arttext&pid=S1729-519X2016000400003" },
+      { "source": "Wikipedia (EN)", "desc": "Charterhouse of Farneta, studies in Paris", "url": "https://en.wikipedia.org/wiki/Jos%C3%A9_Gregorio_Hern%C3%A1ndez" },
+      { "source": "Aleteia", "desc": "2,461 documented testimonies in the cause", "url": "https://es.aleteia.org/2021/08/05/la-canonizacion-de-jose-gregorio-hernandez-sera-en-2022" },
+      { "source": "Correo del Orinoco", "desc": "2,200+ testimonies since 2006", "url": "http://www.correodelorinoco.gob.ve/beatificacion-de-jose-gregorio-hernandez-solo-espera-una-senal-del-cielo/" }
+    ]
   }
 }

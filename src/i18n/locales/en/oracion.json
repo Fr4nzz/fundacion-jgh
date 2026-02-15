@@ -70,6 +70,17 @@
     "title": "Hymn to San José Gregorio Hernández",
     "description": "The official beatification hymn, titled 'Siervo Digno y Bueno' (Worthy and Good Servant), was composed by Richard López with arrangements by Miguel Teixeira of the Music Ministry of the Basilica of Santa Teresa in Caracas.",
     "chorus": "José Gregorio Hernández\ngives peace and comfort\nto all who suffer,\nhealth to the sick,\nand may I too,\nfollowing your example,\noffer to the Father\nall that I have.\nWorthy and good servant.",
-    "listenNote": "The complete hymn can be found on digital platforms (Spotify, YouTube) by searching for 'Himno al Doctor José Gregorio Hernández — MMBST.'"
+    "listenNote": "The complete hymn can be found on digital platforms (Spotify, YouTube) by searching for 'Himno al Doctor José Gregorio Hernández — MMBST.'",
+    "videos": [
+      { "label": "Siervo Digno y Bueno", "videoId": "UeHq3CHSY2A", "artist": "MMBST" },
+      { "label": "Oh Doctor!", "videoId": "6AOhMv8Gmyc", "artist": "MMBST" },
+      { "label": "Beatification", "videoId": "06-y0p9nIhE", "artist": "MMBST" },
+      { "label": "Alma Consagrada", "videoId": "aRiAvxGGczo", "artist": "Hacia El" }
+    ],
+    "resourcesLabel": "More resources",
+    "resources": [
+      { "name": "Hymn lyrics and chords", "url": "https://caminoyoracion.org/blog/cancion-himno-al-doctor-jose-gregorio-hernandez-audio-letra-y-acordes/" },
+      { "name": "Resource page with all hymns", "url": "https://www.josegregoriodevenezuela.com/recursos/" }
+    ]
   }
 }

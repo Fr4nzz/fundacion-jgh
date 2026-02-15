@@ -10,21 +10,21 @@
     "title": "Fe, Ciencia y Caridad",
     "faith": {
       "title": "Fe",
-      "description": "Asistía a misa cada mañana antes del amanecer. Rezaba el Ángelus de rodillas. Intentó dos veces hacerse monje. Pero Dios tenía otro plan para él: servir a los enfermos como médico."
+      "description": "Asistía a misa cada mañana antes del amanecer. Rezaba el Ángelus de rodillas.[1] Intentó dos veces hacerse monje.[3] Pero Dios tenía otro plan para él: servir a los enfermos como médico."
     },
     "science": {
       "title": "Ciencia",
-      "description": "Fundó la primera cátedra de bacteriología de toda Latinoamérica. Trajo los primeros microscopios a Venezuela. Estudió en París con discípulos de Pasteur. Fue científico antes de ser santo."
+      "description": "Fundó la primera cátedra de bacteriología de toda Latinoamérica.[2] Trajo los primeros microscopios a Venezuela.[1] Estudió en París con discípulos de Pasteur.[3] Fue científico antes de ser santo."
     },
     "charity": {
       "title": "Caridad",
-      "description": "Atendía gratis a quien no podía pagar. Compraba las medicinas con su propio dinero. Colocaba una bolsa en su puerta para que los pacientes tomaran lo que necesitaran sin vergüenza."
+      "description": "Atendía gratis a quien no podía pagar. Compraba las medicinas con su propio dinero.[1] Colocaba una bolsa en su puerta para que los pacientes tomaran lo que necesitaran sin vergüenza.[1]"
     }
   },
   "stat": {
     "number": 2100,
     "prefix": "+",
-    "label": "testimonios de favores y sanaciones documentados en su causa de canonización. Más de un siglo de intercesión. Desde el cielo, el Doctor sigue atendiendo."
+    "label": "testimonios de favores y sanaciones documentados en su causa de canonización.[4][5] Más de un siglo de intercesión. Desde el cielo, el Doctor sigue atendiendo."
   },
   "cta": {
     "heading": "Su caridad no terminó en 1919. Continúa a través de quienes seguimos su ejemplo.",
@@ -35,5 +35,15 @@
   "closingQuote": {
     "text": "Hay un ser infinitamente poderoso y sabio, creador del universo admirablemente ordenado que conocemos. Este ser lo llamamos Dios.",
     "attribution": "San José Gregorio Hernández"
+  },
+  "references": {
+    "title": "Fuentes y referencias",
+    "items": [
+      { "source": "JoséGregoriodeVenezuela.com", "desc": "Misa diaria, Ángelus, cepillo de los pobres", "url": "https://www.josegregoriodevenezuela.com/biografia/" },
+      { "source": "Scielo Cuba", "desc": "Primera cátedra de bacteriología, Franciscano Seglar", "url": "http://scielo.sld.cu/scielo.php?script=sci_arttext&pid=S1729-519X2016000400003" },
+      { "source": "Wikipedia (EN)", "desc": "Cartuja de Farneta, estudios en París", "url": "https://en.wikipedia.org/wiki/Jos%C3%A9_Gregorio_Hern%C3%A1ndez" },
+      { "source": "Aleteia", "desc": "2.461 testimonios documentados en la causa", "url": "https://es.aleteia.org/2021/08/05/la-canonizacion-de-jose-gregorio-hernandez-sera-en-2022" },
+      { "source": "Correo del Orinoco", "desc": "+2.200 testimonios desde 2006", "url": "http://www.correodelorinoco.gob.ve/beatificacion-de-jose-gregorio-hernandez-solo-espera-una-senal-del-cielo/" }
+    ]
   }
 }

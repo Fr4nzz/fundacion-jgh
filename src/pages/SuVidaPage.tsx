@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
 import PageHero from "@/components/shared/PageHero";
 import TimelineItem from "@/components/shared/TimelineItem";
+import TextWithRefs from "@/components/shared/TextWithRefs";
+import ReferencesSection from "@/components/shared/ReferencesSection";
 
 interface TimelineSection {
   date: string;
@@ -11,6 +13,7 @@ interface TimelineSection {
 export default function SuVidaPage() {
   const { t } = useTranslation("su-vida");
   const sections = t("sections", { returnObjects: true }) as TimelineSection[];
+  const references = t("references.items", { returnObjects: true }) as any[];
 
   return (
     <>
@@ -43,12 +46,17 @@ export default function SuVidaPage() {
               title={section.title}
             >
               {section.paragraphs.map((p, j) => (
-                <p key={j}>{p}</p>
+                <p key={j}><TextWithRefs text={p} references={references} /></p>
               ))}
             </TimelineItem>
           ))}
         </div>
       </section>
+
+      <ReferencesSection
+        title={t("references.title")}
+        items={t("references.items", { returnObjects: true }) as any[]}
+      />
     </>
   );
 }

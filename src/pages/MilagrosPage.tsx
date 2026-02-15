@@ -1,6 +1,7 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { motion } from "motion/react";
-import { Phone } from "lucide-react";
+import { motion, AnimatePresence } from "motion/react";
+import { Phone, ExternalLink, ChevronDown } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import PageHero from "@/components/shared/PageHero";
@@ -10,17 +11,95 @@ import TestimonialCard from "@/components/shared/TestimonialCard";
 import { fadeUp, staggerContainer } from "@/lib/animations";
 import { PHONE_1, PHONE_2 } from "@/lib/constants";
 
+interface MiracleSource {
+  name: string;
+  url: string;
+}
+
 interface Miracle {
   badge: string;
   pullQuote: string;
   title: string;
   paragraphs: string[];
+  sourcesLabel: string;
+  sources: MiracleSource[];
 }
 
 interface Testimonial {
   name: string;
   location: string;
   quote: string;
+  sourceName?: string;
+  sourceUrl?: string;
+}
+
+function MiracleBlock({ miracle }: { miracle: Miracle }) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <motion.div
+      variants={fadeUp}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-60px" }}
+      className="border-l-4 border-secondary pl-6"
+    >
+      <Badge variant="secondary" className="mb-3 text-xs uppercase">
+        {miracle.badge}
+      </Badge>
+      <p className="mb-4 font-serif text-xl italic text-foreground">
+        {miracle.pullQuote}
+      </p>
+      <h3 className="mb-4 font-serif text-2xl font-semibold text-foreground">
+        {miracle.title}
+      </h3>
+      <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
+        {miracle.paragraphs.map((p, j) => (
+          <p key={j}>{p}</p>
+        ))}
+      </div>
+
+      {/* Sources toggle */}
+      {miracle.sources?.length > 0 && (
+        <div className="mt-5">
+          <button
+            onClick={() => setOpen(!open)}
+            className="flex items-center gap-1.5 text-sm font-medium text-secondary hover:text-secondary/80 transition-colors cursor-pointer"
+          >
+            <ChevronDown
+              className={`h-4 w-4 transition-transform ${open ? "rotate-180" : ""}`}
+            />
+            {miracle.sourcesLabel}
+          </button>
+          <AnimatePresence>
+            {open && (
+              <motion.ul
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "auto", opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.2 }}
+                className="mt-2 space-y-1.5 overflow-hidden"
+              >
+                {miracle.sources.map((src, k) => (
+                  <li key={k}>
+                    <a
+                      href={src.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-secondary transition-colors"
+                    >
+                      <ExternalLink className="h-3.5 w-3.5 shrink-0" />
+                      {src.name}
+                    </a>
+                  </li>
+                ))}
+              </motion.ul>
+            )}
+          </AnimatePresence>
+        </div>
+      )}
+    </motion.div>
+  );
 }
 
 export default function MilagrosPage() {
@@ -43,29 +122,7 @@ export default function MilagrosPage() {
       <section className="bg-card">
         <div className="mx-auto max-w-4xl space-y-10 px-6 py-16 md:py-20">
           {miracles.map((miracle, i) => (
-            <motion.div
-              key={i}
-              variants={fadeUp}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-60px" }}
-              className="border-l-4 border-secondary pl-6"
-            >
-              <Badge variant="secondary" className="mb-3 text-xs uppercase">
-                {miracle.badge}
-              </Badge>
-              <p className="mb-4 font-serif text-xl italic text-foreground">
-                {miracle.pullQuote}
-              </p>
-              <h3 className="mb-4 font-serif text-2xl font-semibold text-foreground">
-                {miracle.title}
-              </h3>
-              <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
-                {miracle.paragraphs.map((p, j) => (
-                  <p key={j}>{p}</p>
-                ))}
-              </div>
-            </motion.div>
+            <MiracleBlock key={i} miracle={miracle} />
           ))}
         </div>
       </section>
@@ -88,6 +145,8 @@ export default function MilagrosPage() {
                 name={item.name}
                 location={item.location}
                 quote={item.quote}
+                sourceName={item.sourceName}
+                sourceUrl={item.sourceUrl}
               />
             </motion.div>
           ))}

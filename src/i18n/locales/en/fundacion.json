@@ -41,8 +41,8 @@
   "ecuadorConnection": {
     "title": "A bond of blood and faith between Venezuela and Ecuador",
     "paragraphs": [
-      "Few know that San José Gregorio Hernández has a blood tie to Ecuador. Through the Febres-Cordero family, who migrated from Venezuela, José Gregorio was a third cousin of Santo Hermano Miguel — Ecuador's only canonized saint — and a fourth-degree uncle of former president León Febres-Cordero Ribadeneyra.",
-      "Devotion to José Gregorio Hernández in Ecuador has deep roots: since 1982, the San Antonio de Padua Parish in Guayaquil has maintained a space dedicated to his veneration. Our Foundation operates from three offices nationwide — Archidona, Riobamba, and Quito — bringing the faith and charity of 'Hermanito Gregorio' to the corners of the Amazon and beyond.",
+      "Few know that San José Gregorio Hernández has a blood tie to Ecuador. Through the Febres-Cordero family, who migrated from Venezuela, José Gregorio was a third cousin of Santo Hermano Miguel — Ecuador's only canonized saint — and a fourth-degree uncle of former president León Febres-Cordero Ribadeneyra.[2][3]",
+      "Devotion to José Gregorio Hernández in Ecuador has deep roots: since 1982, the San Antonio de Padua Parish in Guayaquil has maintained a space dedicated to his veneration. Our Foundation operates from three offices nationwide — Archidona, Riobamba, and Quito — bringing the faith and charity of 'Hermanito Gregorio' to the corners of the Amazon and beyond.[1]",
       "Faith in the holy doctor knows no borders. Ecuador is fertile ground for his devotion."
     ]
   },
@@ -68,5 +68,14 @@
     "boardTitle": "Board of Directors — Archidona Office",
     "president": "President: Sr. José Amable Villarroel Trávez",
     "secretary": "Secretary: Abg. Ximena Espín Pavón"
+  },
+  "references": {
+    "title": "Sources and references",
+    "items": [
+      { "source": "Rosas de Gregorio", "desc": "Active group in Ecuador: 5 cities, 200+ attendees", "url": "https://www.rosasdegregorio.org/quienes-somos.html" },
+      { "source": "El Universo", "desc": "Family ties to Hermano Miguel and Febres-Cordero", "url": "https://www.eluniverso.com/larevista/el-hermano-gregorio-que-sera-beatificado-era-tio-del-expresidente-leon-febres-cordero-nota/" },
+      { "source": "Diario de los Andes", "desc": "Febres-Cordero genealogy Venezuela–Ecuador", "url": "https://diariodelosandes.com/beato-jose-gregorio-hernandez-i-sus-padres-y-sus-origenes-por-rafael-angel-teran-barroeta/" },
+      { "source": "Tal Cual Digital", "desc": "Saintly cousin of Hermano Miguel", "url": "https://talcualdigital.com/un-primo-de-jose-gregorio-hernandez-tambien-es-santo-por-rafael-a-sanabria-m/" }
+    ]
   }
 }

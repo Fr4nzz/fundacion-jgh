@@ -9,6 +9,8 @@ import SectionHeading from "@/components/shared/SectionHeading";
 import QuoteBlock from "@/components/shared/QuoteBlock";
 import CopyButton from "@/components/shared/CopyButton";
 import DonationModal from "@/components/shared/DonationModal";
+import ReferencesSection from "@/components/shared/ReferencesSection";
+import TextWithRefs from "@/components/shared/TextWithRefs";
 import { fadeUp, staggerContainer } from "@/lib/animations";
 import {
   BANK_ACCOUNT,
@@ -39,6 +41,7 @@ export default function FundacionPage() {
   const otherItems = t("donate.otherItems", {
     returnObjects: true,
   }) as string[];
+  const references = t("references.items", { returnObjects: true }) as any[];
 
   return (
     <>
@@ -78,7 +81,7 @@ export default function FundacionPage() {
         <SectionHeading centered={false}>{t("mission.title")}</SectionHeading>
         <div className="space-y-4 text-base leading-relaxed text-muted-foreground">
           {missionParagraphs.map((p, i) => (
-            <p key={i}>{p}</p>
+            <p key={i}><TextWithRefs text={p} references={references} /></p>
           ))}
         </div>
         <div className="mt-8">
@@ -144,7 +147,7 @@ export default function FundacionPage() {
         </SectionHeading>
         <div className="space-y-4 text-base leading-relaxed text-muted-foreground">
           {ecuadorParagraphs.map((p, i) => (
-            <p key={i}>{p}</p>
+            <p key={i}><TextWithRefs text={p} references={references} /></p>
           ))}
         </div>
       </SectionContainer>
@@ -242,6 +245,11 @@ export default function FundacionPage() {
           </div>
         </div>
       </SectionContainer>
+
+      <ReferencesSection
+        title={t("references.title")}
+        items={t("references.items", { returnObjects: true }) as any[]}
+      />
 
       <DonationModal open={donateOpen} onOpenChange={setDonateOpen} />
     </>

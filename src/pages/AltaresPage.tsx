@@ -3,6 +3,8 @@ import PageHero from "@/components/shared/PageHero";
 import SectionContainer from "@/components/shared/SectionContainer";
 import SectionHeading from "@/components/shared/SectionHeading";
 import TimelineItem from "@/components/shared/TimelineItem";
+import TextWithRefs from "@/components/shared/TextWithRefs";
+import ReferencesSection from "@/components/shared/ReferencesSection";
 
 interface TimelineEvent {
   year: string;
@@ -20,6 +22,7 @@ export default function AltaresPage() {
   const beatificacion = t("beatificacion", { returnObjects: true }) as NarrativeSection;
   const canonizacion = t("canonizacion", { returnObjects: true }) as NarrativeSection;
   const porQueImporta = t("porQueImporta", { returnObjects: true }) as NarrativeSection;
+  const references = t("references.items", { returnObjects: true }) as any[];
 
   return (
     <>
@@ -29,7 +32,7 @@ export default function AltaresPage() {
       <section className="bg-card">
         <div className="mx-auto max-w-3xl px-6 py-16 md:py-20">
           {timeline.map((item, i) => (
-            <TimelineItem key={i} date={item.year} title={item.event}>
+            <TimelineItem key={i} date={item.year} title={<TextWithRefs text={item.event} references={references} />}>
               {null}
             </TimelineItem>
           ))}
@@ -41,7 +44,7 @@ export default function AltaresPage() {
         <SectionHeading centered={false}>{beatificacion.title}</SectionHeading>
         <div className="space-y-4 text-base leading-relaxed text-muted-foreground">
           {beatificacion.paragraphs.map((p, i) => (
-            <p key={i}>{p}</p>
+            <p key={i}><TextWithRefs text={p} references={references} /></p>
           ))}
         </div>
       </SectionContainer>
@@ -51,7 +54,7 @@ export default function AltaresPage() {
         <SectionHeading centered={false}>{canonizacion.title}</SectionHeading>
         <div className="space-y-4 text-base leading-relaxed text-muted-foreground">
           {canonizacion.paragraphs.map((p, i) => (
-            <p key={i}>{p}</p>
+            <p key={i}><TextWithRefs text={p} references={references} /></p>
           ))}
         </div>
       </SectionContainer>
@@ -61,10 +64,15 @@ export default function AltaresPage() {
         <SectionHeading centered={false}>{porQueImporta.title}</SectionHeading>
         <div className="space-y-4 text-base leading-relaxed text-muted-foreground">
           {porQueImporta.paragraphs.map((p, i) => (
-            <p key={i}>{p}</p>
+            <p key={i}><TextWithRefs text={p} references={references} /></p>
           ))}
         </div>
       </SectionContainer>
+
+      <ReferencesSection
+        title={t("references.title")}
+        items={t("references.items", { returnObjects: true }) as any[]}
+      />
     </>
   );
 }

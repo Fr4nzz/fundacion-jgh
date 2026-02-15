@@ -14,6 +14,13 @@
         "Her mother, Carmen Ortega, immediately began praying to José Gregorio Hernández. During the surgery, she recounts feeling a hand on her shoulder and hearing a voice that told her: 'Be at peace, everything will be all right.' She also recounts seeing the figure of Hernández in the hospital room.",
         "On the fourth day after surgery, Yaxury began responding positively to all tests. Within 20 days, she walked out of the hospital completely healed, speaking normally, with no permanent neurological impairment.",
         "The Vatican's medical commission, composed of seven doctors, unanimously confirmed in January 2020 that the healing had no scientific explanation."
+      ],
+      "sourcesLabel": "Sources",
+      "sources": [
+        { "name": "JoséGregorio.org — Official testimony", "url": "https://www.josegregorio.org/testimonios/yaxury-sol%C3%B3rzano-ortega" },
+        { "name": "El Pitazo — Detailed medical report", "url": "https://elpitazo.net/gran-caracas/clavesel-milagro-a-yaxury-solorzano-atribuido-a-jose-gregorio-hernandez/" },
+        { "name": "ACI Prensa — Yaxury's First Communion", "url": "https://www.aciprensa.com/noticias/89018/nina-que-recibio-milagro-de-beatificacion-de-jose-gregorio-hernandez-hizo-primera-comunion" },
+        { "name": "Correo del Caroní — Both miracles", "url": "https://correodelcaroni.com/sociedad/cultura/la-ciencia-y-la-fe-los-milagros-que-llevaron-a-la-canonizacion-de-jose-gregorio-hernandez/" }
       ]
     },
     {
@@ -24,6 +31,12 @@
         "Gonzalo Morales Divo, a Venezuelan businessman living in the United States, suffered a catastrophic multi-organ failure: heart, liver, kidneys, and brain, all compromised simultaneously. Doctors predicted irreversible brain damage.",
         "His family prayed for eight consecutive days to José Gregorio Hernández. Morales reported seeing the image of José Gregorio twice during his coma. Within a week, he began recovering at a pace that astonished the medical team. In 2022, the Archdiocese of Miami certified that the recovery had no scientific explanation.",
         "This second miracle opened the door to canonization."
+      ],
+      "sourcesLabel": "Sources",
+      "sources": [
+        { "name": "El Nacional — Main report", "url": "https://www.elnacional.com/venezuela/morales-divo-el-milagro-que-llevara-a-jose-gregorio-hernandez-a-la-canonizacion/" },
+        { "name": "AlbertoNews — Both miracles", "url": "https://albertonews.com/principales/los-milagros-por-el-que-el-venezolano-jose-gregorio-hernandez-sera-santo-el-caso-de-yaxury-solorzano-y-gonzalo-morales-divo/" },
+        { "name": "Wikipedia — Full canonization", "url": "https://es.wikipedia.org/wiki/Canonización_de_José_Gregorio_Hernández_y_de_Carmen_Rendiles" }
       ]
     }
   ],
@@ -33,10 +46,10 @@
     "items": [
       { "name": "Yorgelis López", "location": "Caracas", "quote": "My son was born at 26 weeks of pregnancy. He is alive thanks to the Doctor." },
       { "name": "Vicenta Cordero", "location": "Caracas, 1990", "quote": "Her one-year-old daughter developed pneumonia that progressed to a severe lung infection. Doctors said if the drainage did not work that night, there was no hope. She prayed to José Gregorio. Her daughter recovered completely." },
-      { "name": "Carlos Fernández", "location": "Caracas", "quote": "Diagnosed with melanoma in 2017, he relapsed in 2018. After fervent prayer and treatment, he was discharged months later." },
-      { "name": "María Lara", "location": "Caracas", "quote": "Diagnosed with grade one cancer, she prayed intensely. 'I went for my tests and nothing showed up. Thanks be to God and to the Doctor.'" },
-      { "name": "Juan Díaz", "location": "Guayaquil, Ecuador", "quote": "I am infinitely grateful to Dr. José Gregorio Hernández for helping me with the problems I had with my heart and diabetes. Since becoming a devotee of Dr. José Gregorio Hernández Cisneros, I have drawn closer to God." },
-      { "name": "Efrén Cepeda", "location": "Ibarra, Ecuador", "quote": "I thank and congratulate the Rosas de Gregorio Group of Archidona, Ecuador, for their human warmth and magnificent service. I have notably recovered my health and received miracles in my life, along with my family." }
+      { "name": "Carlos Fernández", "location": "Caracas", "quote": "Diagnosed with melanoma in 2017, he relapsed in 2018. After fervent prayer and treatment, he was discharged months later.", "sourceName": "CNN en Español", "sourceUrl": "https://cnnespanol.cnn.com/2025/10/18/venezuela/quien-fue-jose-gregorio-hernandez-santo-orix" },
+      { "name": "María Lara", "location": "Caracas", "quote": "Diagnosed with grade one cancer, she prayed intensely. 'I went for my tests and nothing showed up. Thanks be to God and to the Doctor.'", "sourceName": "Noticias Caracol", "sourceUrl": "https://www.noticiascaracol.com/mundo/milagros-de-jose-gregorio-hernandez-testimonios-de-sanaciones-atribuidas-al-santo-venezolano-so35" },
+      { "name": "Juan Díaz", "location": "Guayaquil, Ecuador", "quote": "I am infinitely grateful to Dr. José Gregorio Hernández for helping me with the problems I had with my heart and diabetes. Since becoming a devotee of Dr. José Gregorio Hernández Cisneros, I have drawn closer to God.", "sourceName": "Rosas de Gregorio", "sourceUrl": "https://www.rosasdegregorio.org/testimonios.html" },
+      { "name": "Efrén Cepeda", "location": "Ibarra, Ecuador", "quote": "I thank and congratulate the Rosas de Gregorio Group of Archidona, Ecuador, for their human warmth and magnificent service. I have notably recovered my health and received miracles in my life, along with my family.", "sourceName": "Rosas de Gregorio", "sourceUrl": "https://www.rosasdegregorio.org/testimonios.html" }
     ]
   },
   "shareCta": {

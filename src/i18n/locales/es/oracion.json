@@ -70,6 +70,17 @@
     "title": "Himno a San José Gregorio Hernández",
     "description": "El himno oficial de la beatificación, titulado «Siervo Digno y Bueno», fue compuesto por Richard López con arreglos de Miguel Teixeira del Ministerio de Música de la Basílica de Santa Teresa en Caracas.",
     "chorus": "José Gregorio Hernández\nda paz y consuelo\na todo el que sufre\nsalud al enfermo\ny que también yo\nsiguiendo tu ejemplo\nal Padre le ofrezca\ntodo lo que tengo.\nSiervo digno y bueno.",
-    "listenNote": "El himno completo puede escucharse en las plataformas digitales (Spotify, YouTube) buscando «Himno al Doctor José Gregorio Hernández — MMBST»."
+    "listenNote": "El himno completo puede escucharse en las plataformas digitales (Spotify, YouTube) buscando «Himno al Doctor José Gregorio Hernández — MMBST».",
+    "videos": [
+      { "label": "Siervo Digno y Bueno", "videoId": "UeHq3CHSY2A", "artist": "MMBST" },
+      { "label": "¡Oh Doctor!", "videoId": "6AOhMv8Gmyc", "artist": "MMBST" },
+      { "label": "Beatificación", "videoId": "06-y0p9nIhE", "artist": "MMBST" },
+      { "label": "Alma Consagrada", "videoId": "aRiAvxGGczo", "artist": "Hacia El" }
+    ],
+    "resourcesLabel": "Más recursos",
+    "resources": [
+      { "name": "Letra y acordes del himno", "url": "https://caminoyoracion.org/blog/cancion-himno-al-doctor-jose-gregorio-hernandez-audio-letra-y-acordes/" },
+      { "name": "Página de recursos con todos los cantos", "url": "https://www.josegregoriodevenezuela.com/recursos/" }
+    ]
   }
 }

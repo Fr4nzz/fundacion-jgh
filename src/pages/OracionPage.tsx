@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "motion/react";
+import { ExternalLink } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -29,6 +31,59 @@ interface NovenaDay {
 interface QuoteItem {
   topic: string;
   text: string;
+}
+
+interface HymnVideo {
+  label: string;
+  videoId: string;
+  artist: string;
+}
+
+interface HymnResource {
+  name: string;
+  url: string;
+}
+
+function HymnPlayer() {
+  const { t } = useTranslation("oracion");
+  const videos = t("hymn.videos", { returnObjects: true }) as HymnVideo[];
+  const [activeId, setActiveId] = useState(videos[0]?.videoId ?? "");
+
+  if (!Array.isArray(videos) || videos.length === 0) return null;
+
+  return (
+    <div className="mt-8">
+      {/* Tab buttons */}
+      <div className="mb-3 flex flex-wrap gap-1.5">
+        {videos.map((v) => (
+          <button
+            key={v.videoId}
+            onClick={() => setActiveId(v.videoId)}
+            className={`rounded-full border px-3 py-1.5 text-xs font-medium transition-colors cursor-pointer ${
+              activeId === v.videoId
+                ? "border-secondary bg-secondary text-secondary-foreground"
+                : "border-border bg-card text-muted-foreground hover:border-secondary/50"
+            }`}
+          >
+            {v.label}
+            <span className="ml-1 opacity-60">— {v.artist}</span>
+          </button>
+        ))}
+      </div>
+
+      {/* YouTube embed */}
+      <div className="relative w-full overflow-hidden rounded-lg border border-border" style={{ paddingBottom: "56.25%" }}>
+        <iframe
+          key={activeId}
+          className="absolute inset-0 h-full w-full"
+          src={`https://www.youtube.com/embed/${activeId}`}
+          title={videos.find((v) => v.videoId === activeId)?.label ?? ""}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </div>
+    </div>
+  );
 }
 
 export default function OracionPage() {
@@ -151,9 +206,36 @@ export default function OracionPage() {
             </p>
           </CardContent>
         </Card>
-        <p className="mt-4 text-sm text-muted-foreground">
-          {t("hymn.listenNote")}
-        </p>
+
+        {/* Embedded YouTube player with tabs */}
+        <HymnPlayer />
+
+        {/* Extra resources */}
+        {(() => {
+          const resources = t("hymn.resources", { returnObjects: true }) as HymnResource[];
+          return Array.isArray(resources) && resources.length > 0 ? (
+            <div className="mt-6">
+              <p className="mb-2 text-sm font-medium text-foreground">
+                {t("hymn.resourcesLabel")}
+              </p>
+              <ul className="space-y-1.5">
+                {resources.map((res, i) => (
+                  <li key={i}>
+                    <a
+                      href={res.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-secondary transition-colors"
+                    >
+                      <ExternalLink className="h-3.5 w-3.5 shrink-0" />
+                      {res.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null;
+        })()}
       </SectionContainer>
     </>
   );
