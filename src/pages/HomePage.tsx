@@ -52,13 +52,13 @@ export default function HomePage() {
               <motion.div key={key} variants={fadeUp} whileHover={hoverLift}>
                 <Card className="h-full border-b-2 border-b-secondary/40">
                   <CardContent className="pt-6 text-center">
-                    <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-celestial/10 to-secondary/10">
-                      <Icon className="h-7 w-7 text-secondary" />
+                    <div className="mx-auto mb-4 flex h-16 w-16 md:h-14 md:w-14 items-center justify-center rounded-full bg-gradient-to-br from-celestial/10 to-secondary/10">
+                      <Icon className="h-8 w-8 md:h-7 md:w-7 text-secondary" />
                     </div>
-                    <h3 className="mb-2 text-xl font-semibold text-foreground">
+                    <h3 className="mb-2 text-2xl md:text-xl font-semibold text-foreground">
                       {t(`pillars.${key}.title`)}
                     </h3>
-                    <p className="text-lg leading-relaxed text-muted-foreground">
+                    <p className="text-xl md:text-lg leading-relaxed text-muted-foreground">
                       <TextWithRefs text={t(`pillars.${key}.description`)} references={references} />
                     </p>
                   </CardContent>
@@ -76,7 +76,7 @@ export default function HomePage() {
           <p className="font-serif text-5xl font-bold text-primary md:text-6xl">
             + {count.toLocaleString()}
           </p>
-          <p className="mx-auto mt-4 max-w-lg text-xl leading-relaxed text-muted-foreground">
+          <p className="mx-auto mt-4 max-w-lg text-2xl md:text-xl leading-relaxed text-muted-foreground">
             <TextWithRefs text={t("stat.label")} references={references} />
           </p>
           <div className="mx-auto mt-8 h-[2px] w-16 rounded-full bg-gradient-to-r from-transparent via-secondary to-transparent" />
@@ -110,10 +110,10 @@ export default function HomePage() {
           animate={ctaInView ? "visible" : "hidden"}
           className="relative z-10 mx-auto max-w-4xl px-6 py-16 text-center md:py-20"
         >
-          <h2 className="font-serif text-3xl font-bold leading-tight md:text-3xl drop-shadow-[0_2px_8px_rgba(0,0,0,0.1)]">
+          <h2 className="font-serif text-4xl md:text-3xl font-bold leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.1)]">
             {t("cta.heading")}
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-white/80">
+          <p className="mx-auto mt-4 max-w-2xl text-xl md:text-lg leading-relaxed text-white/80">
             {t("cta.body")}
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">

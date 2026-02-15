@@ -42,7 +42,7 @@ export default function AltaresPage() {
       {/* Beatificación */}
       <SectionContainer alt>
         <SectionHeading centered={false}>{beatificacion.title}</SectionHeading>
-        <div className="space-y-4 text-lg leading-relaxed text-muted-foreground">
+        <div className="space-y-4 text-xl md:text-lg leading-relaxed text-muted-foreground">
           {beatificacion.paragraphs.map((p, i) => (
             <p key={i}><TextWithRefs text={p} references={references} /></p>
           ))}
@@ -52,7 +52,7 @@ export default function AltaresPage() {
       {/* Canonización */}
       <SectionContainer>
         <SectionHeading centered={false}>{canonizacion.title}</SectionHeading>
-        <div className="space-y-4 text-lg leading-relaxed text-muted-foreground">
+        <div className="space-y-4 text-xl md:text-lg leading-relaxed text-muted-foreground">
           {canonizacion.paragraphs.map((p, i) => (
             <p key={i}><TextWithRefs text={p} references={references} /></p>
           ))}
@@ -62,7 +62,7 @@ export default function AltaresPage() {
       {/* Por qué importa */}
       <SectionContainer alt>
         <SectionHeading centered={false}>{porQueImporta.title}</SectionHeading>
-        <div className="space-y-4 text-lg leading-relaxed text-muted-foreground">
+        <div className="space-y-4 text-xl md:text-lg leading-relaxed text-muted-foreground">
           {porQueImporta.paragraphs.map((p, i) => (
             <p key={i}><TextWithRefs text={p} references={references} /></p>
           ))}

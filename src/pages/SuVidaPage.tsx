@@ -20,14 +20,14 @@ export default function SuVidaPage() {
       <PageHero compact>
         <div className="flex flex-col items-center gap-6 md:flex-row md:gap-8 md:text-left">
           <div className="flex-1">
-            <h1 className="font-serif text-4xl font-bold text-white md:text-5xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.15)]">
+            <h1 className="font-serif text-5xl font-bold text-white md:text-5xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.15)]">
               {t("hero.title")}
             </h1>
-            <p className="mt-4 text-xl leading-relaxed text-white/80">
+            <p className="mt-4 text-2xl md:text-xl leading-relaxed text-white/80">
               {t("hero.subtitle")}
             </p>
           </div>
-          <div className="w-56 shrink-0 md:w-64">
+          <div className="w-64 shrink-0 md:w-64">
             <img
               src={import.meta.env.BASE_URL + "images/biografia-jose-gregorio-main.png"}
               alt="San José Gregorio Hernández"

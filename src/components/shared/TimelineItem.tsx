@@ -36,10 +36,10 @@ export default function TimelineItem({ date, title, children }: TimelineItemProp
             {date}
           </Badge>
         )}
-        <h3 className="font-serif text-2xl font-semibold text-foreground md:text-2xl">
+        <h3 className="font-serif text-3xl md:text-2xl font-semibold text-foreground">
           {title}
         </h3>
-        <div className="space-y-3 text-lg leading-relaxed text-muted-foreground">
+        <div className="space-y-3 text-xl md:text-lg leading-relaxed text-muted-foreground">
           {children}
         </div>
       </div>

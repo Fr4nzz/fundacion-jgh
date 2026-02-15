@@ -18,7 +18,7 @@ export default function QuoteBlock({ text, attribution, className }: QuoteBlockP
       <span className="absolute -top-4 left-1/2 -translate-x-1/2 font-serif text-6xl text-shimmer select-none leading-none">
         &ldquo;
       </span>
-      <p className="mt-4 font-serif text-xl italic leading-relaxed text-foreground md:text-xl">
+      <p className="mt-4 font-serif text-2xl md:text-xl italic leading-relaxed text-foreground">
         {text}
       </p>
       {attribution && (

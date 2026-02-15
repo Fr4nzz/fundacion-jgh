@@ -91,7 +91,7 @@ export default function PageHero({
     return (
       <section
         className={cn(
-          "relative flex min-h-[40vh] items-center justify-center overflow-hidden",
+          "relative flex min-h-[50vh] md:min-h-[40vh] items-center justify-center overflow-hidden",
           backgroundImage ? "text-white" : "bg-heaven-gradient text-white",
           className
         )}
@@ -120,13 +120,13 @@ export default function PageHero({
           {headlines.map((line, i) => (
             <h1
               key={i}
-              className="text-balance font-serif text-4xl font-bold leading-tight tracking-tight md:text-5xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.15)]"
+              className="text-balance font-serif text-5xl font-bold leading-tight tracking-tight md:text-5xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.15)]"
             >
               {line}
             </h1>
           ))}
           {subtitle && (
-            <p className="mt-6 text-xl leading-relaxed text-white/85">
+            <p className="mt-6 text-2xl md:text-xl leading-relaxed text-white/85">
               {subtitle}
             </p>
           )}
@@ -166,13 +166,13 @@ export default function PageHero({
           {headlines.map((line, i) => (
             <h1
               key={i}
-              className="text-balance font-serif text-4xl font-bold leading-tight tracking-tight md:text-5xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.12)]"
+              className="text-balance font-serif text-5xl font-bold leading-tight tracking-tight md:text-5xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.12)]"
             >
               {line}
             </h1>
           ))}
           {subtitle && (
-            <p className="mt-6 text-balance text-xl leading-relaxed text-white/85">
+            <p className="mt-6 text-balance text-2xl md:text-xl leading-relaxed text-white/85">
               {subtitle}
             </p>
           )}
