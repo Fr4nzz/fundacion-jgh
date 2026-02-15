@@ -26,7 +26,7 @@ export default function DonationModal({ open, onOpenChange }: DonationModalProps
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-md glass-strong rounded-2xl">
+      <DialogContent className="max-w-md rounded-2xl bg-[#f3f7fc] border-white/70 shadow-[0_8px_40px_rgba(90,130,180,0.2)]">
         <DialogHeader>
           <DialogTitle className="font-serif text-xl">
             {t("donate.modalTitle")}
@@ -47,24 +47,24 @@ export default function DonationModal({ open, onOpenChange }: DonationModalProps
                 filter: "blur(20px)",
               }}
             />
-            <p className="text-xs font-medium uppercase tracking-wider text-white/60">
+            <p className="text-xs font-medium uppercase tracking-wider text-white/70">
               {t("donate.bankLabel")}
             </p>
             <div className="relative mt-3 space-y-2 text-sm">
               <div className="flex justify-between">
-                <span className="text-white/70">{t("donate.beneficiary")}</span>
+                <span className="text-white/80">{t("donate.beneficiary")}</span>
                 <span className="text-right font-medium text-white">
                   {FOUNDATION_NAME.split("Dr.")[0].trim()}
                 </span>
               </div>
               <div className="flex justify-between">
-                <span className="text-white/70">{t("donate.accountNumber")}</span>
+                <span className="text-white/80">{t("donate.accountNumber")}</span>
                 <span className="font-mono font-semibold text-sunrise-warm">
                   {BANK_ACCOUNT}
                 </span>
               </div>
               <div className="flex justify-between">
-                <span className="text-white/70">{t("donate.ruc")}</span>
+                <span className="text-white/80">{t("donate.ruc")}</span>
                 <span className="font-mono text-white">{BANK_RUC}</span>
               </div>
             </div>
