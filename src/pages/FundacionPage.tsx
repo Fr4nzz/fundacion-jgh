@@ -74,7 +74,7 @@ export default function FundacionPage() {
           <img
             src={import.meta.env.BASE_URL + "images/integrantes-devotos.jpeg"}
             alt="Integrantes de la Fundación"
-            className="w-full max-h-[24rem] object-cover object-top"
+            className="w-full max-h-[24rem] object-cover object-bottom"
           />
         </motion.div>
       </section>
