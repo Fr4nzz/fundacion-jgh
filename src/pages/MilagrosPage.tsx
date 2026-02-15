@@ -49,13 +49,13 @@ function MiracleBlock({ miracle }: { miracle: Miracle }) {
       <Badge variant="secondary" className="mb-3 text-xs uppercase">
         {miracle.badge}
       </Badge>
-      <p className="mb-4 font-serif text-xl italic text-foreground">
+      <p className="mb-4 font-serif text-2xl italic text-foreground">
         {miracle.pullQuote}
       </p>
-      <h3 className="mb-4 font-serif text-2xl font-semibold text-foreground">
+      <h3 className="mb-4 font-serif text-3xl font-semibold text-foreground">
         {miracle.title}
       </h3>
-      <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
+      <div className="space-y-3 text-lg leading-relaxed text-muted-foreground">
         {miracle.paragraphs.map((p, j) => (
           <p key={j}>{p}</p>
         ))}
@@ -121,7 +121,7 @@ export default function MilagrosPage() {
 
       {/* Official miracles */}
       <section className="bg-transparent">
-        <div className="mx-auto max-w-4xl space-y-8 px-6 py-16 md:py-20">
+        <div className="mx-auto max-w-4xl space-y-8 px-6 py-20 md:py-20">
           {miracles.map((miracle, i) => (
             <MiracleBlock key={i} miracle={miracle} />
           ))}
@@ -154,11 +154,11 @@ export default function MilagrosPage() {
       {/* Share CTA */}
       <SectionContainer>
         <div className="text-center">
-          <h2 className="font-serif text-2xl font-bold text-foreground md:text-3xl">
+          <h2 className="font-serif text-3xl font-bold text-foreground md:text-3xl">
             {t("shareCta.title")}
           </h2>
           <div className="mx-auto mt-3 h-[2px] w-16 rounded-full bg-gradient-to-r from-transparent via-secondary to-transparent" />
-          <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-muted-foreground">
+          <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-muted-foreground">
             {t("shareCta.body")}
           </p>
           <div className="mt-6 flex flex-col items-center gap-3">

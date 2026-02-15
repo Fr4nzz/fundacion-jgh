@@ -35,7 +35,7 @@ export default function SectionContainer({
         variants={fadeUp}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
-        className="mx-auto max-w-4xl px-6 py-16 md:py-20"
+        className="mx-auto max-w-4xl px-6 py-20 md:py-20"
       >
         {children}
       </motion.div>

@@ -115,18 +115,18 @@ export default function PageHero({
           variants={celestialReveal}
           initial="hidden"
           animate="visible"
-          className="relative z-10 mx-auto max-w-3xl px-6 py-20 text-center"
+          className="relative z-10 mx-auto max-w-3xl px-6 py-24 text-center"
         >
           {headlines.map((line, i) => (
             <h1
               key={i}
-              className="text-balance font-serif text-3xl font-bold leading-tight tracking-tight md:text-5xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.15)]"
+              className="text-balance font-serif text-4xl font-bold leading-tight tracking-tight md:text-5xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.15)]"
             >
               {line}
             </h1>
           ))}
           {subtitle && (
-            <p className="mt-6 text-lg leading-relaxed text-white/85">
+            <p className="mt-6 text-xl leading-relaxed text-white/85">
               {subtitle}
             </p>
           )}
@@ -161,18 +161,18 @@ export default function PageHero({
           variants={celestialReveal}
           initial="hidden"
           animate="visible"
-          className="relative z-10 mx-auto max-w-3xl px-6 pb-14 pt-6 text-center md:pb-18"
+          className="relative z-10 mx-auto max-w-3xl px-6 pb-16 pt-8 text-center md:pb-18"
         >
           {headlines.map((line, i) => (
             <h1
               key={i}
-              className="text-balance font-serif text-3xl font-bold leading-tight tracking-tight md:text-5xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.12)]"
+              className="text-balance font-serif text-4xl font-bold leading-tight tracking-tight md:text-5xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.12)]"
             >
               {line}
             </h1>
           ))}
           {subtitle && (
-            <p className="mt-6 text-balance text-lg leading-relaxed text-white/85">
+            <p className="mt-6 text-balance text-xl leading-relaxed text-white/85">
               {subtitle}
             </p>
           )}

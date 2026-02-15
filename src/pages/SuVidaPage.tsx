@@ -18,16 +18,16 @@ export default function SuVidaPage() {
   return (
     <>
       <PageHero compact>
-        <div className="flex flex-col items-center gap-8 md:flex-row md:text-left">
+        <div className="flex flex-col items-center gap-6 md:flex-row md:gap-8 md:text-left">
           <div className="flex-1">
             <h1 className="font-serif text-4xl font-bold text-white md:text-5xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.15)]">
               {t("hero.title")}
             </h1>
-            <p className="mt-4 text-lg leading-relaxed text-white/80">
+            <p className="mt-4 text-xl leading-relaxed text-white/80">
               {t("hero.subtitle")}
             </p>
           </div>
-          <div className="w-48 shrink-0 md:w-64">
+          <div className="w-56 shrink-0 md:w-64">
             <img
               src={import.meta.env.BASE_URL + "images/biografia-jose-gregorio-main.png"}
               alt="San José Gregorio Hernández"
@@ -38,7 +38,7 @@ export default function SuVidaPage() {
       </PageHero>
 
       <section className="bg-transparent">
-        <div className="mx-auto max-w-3xl px-6 py-16 md:py-20">
+        <div className="mx-auto max-w-3xl px-6 py-20 md:py-20">
           {sections.map((section, i) => (
             <TimelineItem
               key={i}

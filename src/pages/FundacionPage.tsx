@@ -49,7 +49,7 @@ export default function FundacionPage() {
     <>
       {/* Hero with real Archidona photo */}
       <section className="bg-sky-mist">
-        <div className="mx-auto max-w-5xl px-6 py-16 md:py-20">
+        <div className="mx-auto max-w-5xl px-6 py-20 md:py-20">
           <motion.div
             variants={fadeUp}
             initial="hidden"
@@ -60,7 +60,7 @@ export default function FundacionPage() {
               {t("hero.title")}
             </h1>
             <div className="h-[2px] w-16 rounded-full bg-gradient-to-r from-secondary/60 via-secondary to-secondary/60" />
-            <p className="text-lg leading-relaxed text-muted-foreground">
+            <p className="text-xl leading-relaxed text-muted-foreground">
               {t("hero.subtitle")}
             </p>
           </motion.div>
@@ -82,7 +82,7 @@ export default function FundacionPage() {
       {/* Mission */}
       <SectionContainer>
         <SectionHeading centered={false}>{t("mission.title")}</SectionHeading>
-        <div className="space-y-4 text-base leading-relaxed text-muted-foreground">
+        <div className="space-y-4 text-lg leading-relaxed text-muted-foreground">
           {missionParagraphs.map((p, i) => (
             <p key={i}><TextWithRefs text={p} references={references} /></p>
           ))}
@@ -108,14 +108,14 @@ export default function FundacionPage() {
               <motion.div key={i} variants={fadeUp} whileHover={hoverLift}>
                 <Card className="h-full">
                   <CardContent className="flex gap-4 pt-6">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-celestial/10 to-secondary/10">
-                      <Icon className="h-5 w-5 text-secondary" />
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-celestial/10 to-secondary/10">
+                      <Icon className="h-6 w-6 text-secondary" />
                     </div>
                     <div>
-                      <h3 className="mb-1 font-semibold text-foreground">
+                      <h3 className="mb-1 text-lg font-semibold text-foreground">
                         {item.title}
                       </h3>
-                      <p className="text-base leading-relaxed text-muted-foreground">
+                      <p className="text-lg leading-relaxed text-muted-foreground">
                         {item.description}
                       </p>
                     </div>
@@ -144,7 +144,7 @@ export default function FundacionPage() {
         <SectionHeading centered={false}>
           {t("ecuadorConnection.title")}
         </SectionHeading>
-        <div className="space-y-4 text-base leading-relaxed text-muted-foreground">
+        <div className="space-y-4 text-lg leading-relaxed text-muted-foreground">
           {ecuadorParagraphs.map((p, i) => (
             <p key={i}><TextWithRefs text={p} references={references} /></p>
           ))}
@@ -169,11 +169,11 @@ export default function FundacionPage() {
           animate={donateInView ? "visible" : "hidden"}
           className="relative z-10 mx-auto max-w-4xl px-6 py-16 md:py-20"
         >
-          <h2 className="font-serif text-2xl font-bold md:text-3xl">
+          <h2 className="font-serif text-3xl font-bold md:text-3xl">
             {t("donate.title")}
           </h2>
-          <p className="mt-2 text-lg text-white/80">{t("donate.heading")}</p>
-          <p className="mt-4 text-base text-white/70">{t("donate.body")}</p>
+          <p className="mt-2 text-xl text-white/80">{t("donate.heading")}</p>
+          <p className="mt-4 text-lg text-white/70">{t("donate.body")}</p>
 
           {/* Bank card — glass on dark */}
           <div className="mt-8 rounded-xl bg-white/10 p-6 backdrop-blur-sm border border-white/10">
@@ -199,7 +199,7 @@ export default function FundacionPage() {
           <div className="mt-8 grid gap-8 md:grid-cols-2">
             <div>
               <h3 className="mb-3 font-semibold">{t("donate.otherWays")}</h3>
-              <ul className="space-y-2 text-base text-white/80">
+              <ul className="space-y-2 text-lg text-white/80">
                 {otherItems.map((item, i) => (
                   <li key={i} className="flex items-start gap-2">
                     <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-secondary/60" />
@@ -210,7 +210,7 @@ export default function FundacionPage() {
             </div>
             <div>
               <h3 className="mb-3 font-semibold">{t("donate.contact")}</h3>
-              <div className="flex items-center gap-2 text-base text-white/80">
+              <div className="flex items-center gap-2 text-lg text-white/80">
                 <Phone className="h-4 w-4" />
                 <span>
                   {PHONE_1} / {PHONE_2}
@@ -235,16 +235,16 @@ export default function FundacionPage() {
       {/* Legal */}
       <SectionContainer alt>
         <SectionHeading centered={false}>{t("legal.title")}</SectionHeading>
-        <p className="text-base leading-relaxed text-muted-foreground">
+        <p className="text-lg leading-relaxed text-muted-foreground">
           {t("legal.body")}
         </p>
         <div className="mt-6 flex flex-col gap-6 md:flex-row md:items-center">
-          <div className="space-y-1 text-base text-foreground">
+          <div className="space-y-1 text-lg text-foreground">
             <p className="font-semibold">{t("legal.boardTitle")}</p>
             <p>{t("legal.president")}</p>
             <p>{t("legal.secretary")}</p>
           </div>
-          <div className="w-48 shrink-0">
+          <div className="w-56 shrink-0">
             <img
               src={
                 import.meta.env.BASE_URL +

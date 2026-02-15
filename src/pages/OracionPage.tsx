@@ -103,11 +103,11 @@ export default function OracionPage() {
           <Accordion type="single" collapsible className="space-y-2">
             {prayers.map((prayer) => (
               <AccordionItem key={prayer.id} value={prayer.id}>
-                <AccordionTrigger className="font-serif text-base font-semibold">
+                <AccordionTrigger className="font-serif text-lg font-semibold">
                   {prayer.title}
                 </AccordionTrigger>
                 <AccordionContent>
-                  <p className="whitespace-pre-line font-serif text-base italic leading-relaxed text-muted-foreground">
+                  <p className="whitespace-pre-line font-serif text-lg italic leading-relaxed text-muted-foreground">
                     {prayer.text}
                   </p>
                 </AccordionContent>
@@ -139,7 +139,7 @@ export default function OracionPage() {
       {/* Novena */}
       <SectionContainer alt>
         <SectionHeading centered={false}>{t("novena.title")}</SectionHeading>
-        <p className="mb-6 text-base leading-relaxed text-muted-foreground">
+        <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
           {t("novena.intro")}
         </p>
         <Card className="mb-6">
@@ -149,7 +149,7 @@ export default function OracionPage() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="whitespace-pre-line font-serif text-base italic leading-relaxed text-muted-foreground">
+            <p className="whitespace-pre-line font-serif text-lg italic leading-relaxed text-muted-foreground">
               {t("novena.openingPrayer")}
             </p>
           </CardContent>
@@ -160,7 +160,7 @@ export default function OracionPage() {
               <span className="shrink-0 flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-br from-celestial/15 to-secondary/15 font-serif text-sm font-bold text-secondary">
                 {day.day}
               </span>
-              <span className="text-base text-foreground">
+              <span className="text-lg text-foreground">
                 {day.theme}
               </span>
             </li>
@@ -181,7 +181,7 @@ export default function OracionPage() {
                 <p className="mb-1 text-xs font-medium uppercase tracking-wider text-secondary">
                   {quote.topic}
                 </p>
-                <p className="font-serif text-base italic leading-relaxed text-foreground">
+                <p className="font-serif text-lg italic leading-relaxed text-foreground">
                   &ldquo;{quote.text}&rdquo;
                 </p>
               </div>
@@ -193,12 +193,12 @@ export default function OracionPage() {
       {/* Hymn */}
       <SectionContainer alt>
         <SectionHeading centered={false}>{t("hymn.title")}</SectionHeading>
-        <p className="mb-6 text-base leading-relaxed text-muted-foreground">
+        <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
           {t("hymn.description")}
         </p>
         <Card>
           <CardContent className="pt-6">
-            <p className="whitespace-pre-line text-center font-serif text-base italic leading-relaxed text-foreground">
+            <p className="whitespace-pre-line text-center font-serif text-lg italic leading-relaxed text-foreground">
               {t("hymn.chorus")}
             </p>
           </CardContent>
