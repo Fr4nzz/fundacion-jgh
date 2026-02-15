@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { fadeUp } from "@/lib/animations";
 import { Badge } from "@/components/ui/badge";
+import { useDirectionalInView } from "@/hooks/useDirectionalInView";
 
 interface TimelineItemProps {
   date?: string;
@@ -9,12 +10,14 @@ interface TimelineItemProps {
 }
 
 export default function TimelineItem({ date, title, children }: TimelineItemProps) {
+  const { ref, isInView } = useDirectionalInView("-60px");
+
   return (
     <motion.div
+      ref={ref}
       variants={fadeUp}
       initial="hidden"
-      whileInView="visible"
-      viewport={{ margin: "-60px" }}
+      animate={isInView ? "visible" : "hidden"}
       className="relative pl-8 pb-12 last:pb-0"
     >
       {/* Timeline line — celestial gradient */}

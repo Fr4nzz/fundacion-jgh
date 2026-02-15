@@ -8,6 +8,7 @@ import PageHero from "@/components/shared/PageHero";
 import SectionContainer from "@/components/shared/SectionContainer";
 import SectionHeading from "@/components/shared/SectionHeading";
 import TestimonialCard from "@/components/shared/TestimonialCard";
+import { useDirectionalInView } from "@/hooks/useDirectionalInView";
 import { fadeUp, staggerContainer, hoverLift } from "@/lib/animations";
 import { PHONE_1, PHONE_2 } from "@/lib/constants";
 
@@ -35,13 +36,14 @@ interface Testimonial {
 
 function MiracleBlock({ miracle }: { miracle: Miracle }) {
   const [open, setOpen] = useState(false);
+  const { ref, isInView } = useDirectionalInView("-60px");
 
   return (
     <motion.div
+      ref={ref}
       variants={fadeUp}
       initial="hidden"
-      whileInView="visible"
-      viewport={{ margin: "-60px" }}
+      animate={isInView ? "visible" : "hidden"}
       className="relative rounded-2xl glass-subtle p-6 border-l-4 border-l-secondary/50"
     >
       <Badge variant="secondary" className="mb-3 text-xs uppercase">
@@ -133,9 +135,6 @@ export default function MilagrosPage() {
         </SectionHeading>
         <motion.div
           variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ margin: "-60px" }}
           className="grid gap-6 md:grid-cols-2"
         >
           {testimonials.map((item, i) => (

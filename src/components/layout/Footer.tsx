@@ -26,9 +26,9 @@ export default function Footer() {
               {t("footer.name")}
             </h3>
             <div className="h-[2px] w-12 rounded-full bg-gradient-to-r from-secondary/50 to-transparent" />
-            <p className="text-sm text-white/70">{t("footer.sede")}</p>
-            <p className="text-sm text-white/70">{t("footer.location")}</p>
-            <div className="flex items-center gap-2 text-sm text-white/70">
+            <p className="text-base text-white/70">{t("footer.sede")}</p>
+            <p className="text-base text-white/70">{t("footer.location")}</p>
+            <div className="flex items-center gap-2 text-base text-white/70">
               <Phone className="h-4 w-4" />
               <span>{PHONE_1} / {PHONE_2}</span>
             </div>

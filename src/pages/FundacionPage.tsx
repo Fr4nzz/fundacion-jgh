@@ -11,6 +11,7 @@ import CopyButton from "@/components/shared/CopyButton";
 import DonationModal from "@/components/shared/DonationModal";
 import ReferencesSection from "@/components/shared/ReferencesSection";
 import TextWithRefs from "@/components/shared/TextWithRefs";
+import { useDirectionalInView } from "@/hooks/useDirectionalInView";
 import { fadeUp, staggerContainer, hoverLift } from "@/lib/animations";
 import {
   BANK_ACCOUNT,
@@ -29,6 +30,7 @@ interface Activity {
 export default function FundacionPage() {
   const { t } = useTranslation("fundacion");
   const [donateOpen, setDonateOpen] = useState(false);
+  const { ref: donateRef, isInView: donateInView } = useDirectionalInView("-80px");
   const activities = t("activities.items", {
     returnObjects: true,
   }) as Activity[];
@@ -47,12 +49,12 @@ export default function FundacionPage() {
     <>
       {/* Hero with real Archidona photo */}
       <section className="bg-sky-mist">
-        <div className="mx-auto flex max-w-5xl flex-col items-center gap-8 px-6 py-16 md:flex-row md:py-20">
+        <div className="mx-auto max-w-5xl px-6 py-16 md:py-20">
           <motion.div
             variants={fadeUp}
             initial="hidden"
             animate="visible"
-            className="flex-1 space-y-4"
+            className="space-y-4"
           >
             <h1 className="font-serif text-4xl font-bold text-foreground md:text-5xl">
               {t("hero.title")}
@@ -62,19 +64,19 @@ export default function FundacionPage() {
               {t("hero.subtitle")}
             </p>
           </motion.div>
-          <motion.div
-            variants={fadeUp}
-            initial="hidden"
-            animate="visible"
-            className="w-full shrink-0 md:w-96"
-          >
-            <img
-              src={import.meta.env.BASE_URL + "images/integrantes-devotos.jpeg"}
-              alt="Integrantes de la Fundación"
-              className="rounded-2xl shadow-lg ring-1 ring-white/50"
-            />
-          </motion.div>
         </div>
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          animate="visible"
+          className="overflow-hidden"
+        >
+          <img
+            src={import.meta.env.BASE_URL + "images/integrantes-devotos.jpeg"}
+            alt="Integrantes de la Fundación"
+            className="w-full max-h-[24rem] object-cover object-top"
+          />
+        </motion.div>
       </section>
 
       {/* Mission */}
@@ -98,9 +100,6 @@ export default function FundacionPage() {
         <SectionHeading>{t("activities.title")}</SectionHeading>
         <motion.div
           variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ margin: "-60px" }}
           className="grid gap-6 md:grid-cols-2"
         >
           {activities.map((item, i) => {
@@ -116,7 +115,7 @@ export default function FundacionPage() {
                       <h3 className="mb-1 font-semibold text-foreground">
                         {item.title}
                       </h3>
-                      <p className="text-sm leading-relaxed text-muted-foreground">
+                      <p className="text-base leading-relaxed text-muted-foreground">
                         {item.description}
                       </p>
                     </div>
@@ -130,9 +129,6 @@ export default function FundacionPage() {
         {/* Second real photo */}
         <motion.div
           variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ margin: "-60px" }}
           className="mt-10 overflow-hidden rounded-2xl"
         >
           <img
@@ -167,10 +163,10 @@ export default function FundacionPage() {
           }}
         />
         <motion.div
+          ref={donateRef}
           variants={fadeUp}
           initial="hidden"
-          whileInView="visible"
-          viewport={{ margin: "-80px" }}
+          animate={donateInView ? "visible" : "hidden"}
           className="relative z-10 mx-auto max-w-4xl px-6 py-16 md:py-20"
         >
           <h2 className="font-serif text-2xl font-bold md:text-3xl">
@@ -203,7 +199,7 @@ export default function FundacionPage() {
           <div className="mt-8 grid gap-8 md:grid-cols-2">
             <div>
               <h3 className="mb-3 font-semibold">{t("donate.otherWays")}</h3>
-              <ul className="space-y-2 text-sm text-white/80">
+              <ul className="space-y-2 text-base text-white/80">
                 {otherItems.map((item, i) => (
                   <li key={i} className="flex items-start gap-2">
                     <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-secondary/60" />
@@ -214,7 +210,7 @@ export default function FundacionPage() {
             </div>
             <div>
               <h3 className="mb-3 font-semibold">{t("donate.contact")}</h3>
-              <div className="flex items-center gap-2 text-sm text-white/80">
+              <div className="flex items-center gap-2 text-base text-white/80">
                 <Phone className="h-4 w-4" />
                 <span>
                   {PHONE_1} / {PHONE_2}
@@ -243,7 +239,7 @@ export default function FundacionPage() {
           {t("legal.body")}
         </p>
         <div className="mt-6 flex flex-col gap-6 md:flex-row md:items-center">
-          <div className="space-y-1 text-sm text-foreground">
+          <div className="space-y-1 text-base text-foreground">
             <p className="font-semibold">{t("legal.boardTitle")}</p>
             <p>{t("legal.president")}</p>
             <p>{t("legal.secretary")}</p>

@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { fadeUp } from "@/lib/animations";
 import { cn } from "@/lib/utils";
+import { useDirectionalInView } from "@/hooks/useDirectionalInView";
 
 interface SectionContainerProps {
   children: React.ReactNode;
@@ -15,6 +16,8 @@ export default function SectionContainer({
   alt,
   id,
 }: SectionContainerProps) {
+  const { ref, isInView } = useDirectionalInView("-80px");
+
   return (
     <section
       id={id}
@@ -28,10 +31,10 @@ export default function SectionContainer({
       <div className="divider-cloud" />
 
       <motion.div
+        ref={ref}
         variants={fadeUp}
         initial="hidden"
-        whileInView="visible"
-        viewport={{ margin: "-80px" }}
+        animate={isInView ? "visible" : "hidden"}
         className="mx-auto max-w-4xl px-6 py-16 md:py-20"
       >
         {children}

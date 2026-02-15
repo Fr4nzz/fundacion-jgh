@@ -107,7 +107,7 @@ export default function OracionPage() {
                   {prayer.title}
                 </AccordionTrigger>
                 <AccordionContent>
-                  <p className="whitespace-pre-line font-serif text-sm italic leading-relaxed text-muted-foreground">
+                  <p className="whitespace-pre-line font-serif text-base italic leading-relaxed text-muted-foreground">
                     {prayer.text}
                   </p>
                 </AccordionContent>
@@ -149,7 +149,7 @@ export default function OracionPage() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="whitespace-pre-line font-serif text-sm italic leading-relaxed text-muted-foreground">
+            <p className="whitespace-pre-line font-serif text-base italic leading-relaxed text-muted-foreground">
               {t("novena.openingPrayer")}
             </p>
           </CardContent>
@@ -160,7 +160,7 @@ export default function OracionPage() {
               <span className="shrink-0 flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-br from-celestial/15 to-secondary/15 font-serif text-sm font-bold text-secondary">
                 {day.day}
               </span>
-              <span className="text-sm text-foreground">
+              <span className="text-base text-foreground">
                 {day.theme}
               </span>
             </li>
@@ -173,9 +173,6 @@ export default function OracionPage() {
         <SectionHeading>{t("quotes.title")}</SectionHeading>
         <motion.div
           variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ margin: "-60px" }}
           className="grid gap-6 md:grid-cols-2"
         >
           {quotes.map((quote, i) => (

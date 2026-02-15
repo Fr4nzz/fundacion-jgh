@@ -50,7 +50,7 @@ export default function DonationModal({ open, onOpenChange }: DonationModalProps
             <p className="text-xs font-medium uppercase tracking-wider text-white/70">
               {t("donate.bankLabel")}
             </p>
-            <div className="relative mt-3 space-y-2 text-sm">
+            <div className="relative mt-3 space-y-2 text-base">
               <div className="flex justify-between">
                 <span className="text-white/80">{t("donate.beneficiary")}</span>
                 <span className="text-right font-medium text-white">
@@ -75,19 +75,19 @@ export default function DonationModal({ open, onOpenChange }: DonationModalProps
 
           {/* Contact */}
           <div className="space-y-2">
-            <p className="text-sm font-medium text-foreground">
+            <p className="text-base font-medium text-foreground">
               {t("donate.otherMeans")}
             </p>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-base text-muted-foreground">
               {t("donate.callUs")}:
             </p>
-            <div className="flex items-center gap-2 text-sm text-foreground">
+            <div className="flex items-center gap-2 text-base text-foreground">
               <Phone className="h-4 w-4 text-muted-foreground" />
               <span>{PHONE_1} / {PHONE_2}</span>
             </div>
           </div>
 
-          <p className="text-center text-sm italic text-muted-foreground">
+          <p className="text-center text-base italic text-muted-foreground">
             {t("donate.everyDonation")}
           </p>
         </div>

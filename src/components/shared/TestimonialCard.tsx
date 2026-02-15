@@ -20,7 +20,7 @@ export default function TestimonialCard({ name, location, quote, sourceName, sou
         </p>
         <div className="mt-4 flex items-end justify-between gap-2">
           <div>
-            <p className="text-sm font-semibold text-foreground">{name}</p>
+            <p className="text-base font-semibold text-foreground">{name}</p>
             <p className="text-xs text-muted-foreground">{location}</p>
           </div>
           {sourceUrl && (

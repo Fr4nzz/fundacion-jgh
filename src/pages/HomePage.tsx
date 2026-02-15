@@ -13,6 +13,7 @@ import DonationModal from "@/components/shared/DonationModal";
 import ReferencesSection from "@/components/shared/ReferencesSection";
 import TextWithRefs from "@/components/shared/TextWithRefs";
 import { useCountUp } from "@/hooks/useCountUp";
+import { useDirectionalInView } from "@/hooks/useDirectionalInView";
 import { fadeUp, staggerContainer, hoverLift } from "@/lib/animations";
 
 const PILLAR_ICONS = [Cross, BookOpen, Heart] as const;
@@ -22,6 +23,7 @@ export default function HomePage() {
   const { t } = useTranslation("home");
   const [donateOpen, setDonateOpen] = useState(false);
   const { count, ref: counterRef } = useCountUp(2100, 2000);
+  const { ref: ctaRef, isInView: ctaInView } = useDirectionalInView("-80px");
   const references = t("references.items", { returnObjects: true }) as any[];
 
   return (
@@ -42,9 +44,6 @@ export default function HomePage() {
         <SectionHeading>{t("pillars.title")}</SectionHeading>
         <motion.div
           variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ margin: "-80px" }}
           className="grid gap-8 md:grid-cols-3"
         >
           {PILLAR_KEYS.map((key, i) => {
@@ -59,7 +58,7 @@ export default function HomePage() {
                     <h3 className="mb-2 text-lg font-semibold text-foreground">
                       {t(`pillars.${key}.title`)}
                     </h3>
-                    <p className="text-sm leading-relaxed text-muted-foreground">
+                    <p className="text-base leading-relaxed text-muted-foreground">
                       <TextWithRefs text={t(`pillars.${key}.description`)} references={references} />
                     </p>
                   </CardContent>
@@ -105,10 +104,10 @@ export default function HomePage() {
         />
 
         <motion.div
+          ref={ctaRef}
           variants={fadeUp}
           initial="hidden"
-          whileInView="visible"
-          viewport={{ margin: "-80px" }}
+          animate={ctaInView ? "visible" : "hidden"}
           className="relative z-10 mx-auto max-w-4xl px-6 py-16 text-center md:py-20"
         >
           <h2 className="font-serif text-2xl font-bold leading-tight md:text-3xl drop-shadow-[0_2px_8px_rgba(0,0,0,0.1)]">
