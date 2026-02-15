@@ -31,7 +31,7 @@ export default function SectionContainer({
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-80px" }}
+        viewport={{ margin: "-80px" }}
         className="mx-auto max-w-4xl px-6 py-16 md:py-20"
       >
         {children}

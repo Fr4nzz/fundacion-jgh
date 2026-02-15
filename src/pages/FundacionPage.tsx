@@ -100,7 +100,7 @@ export default function FundacionPage() {
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
+          viewport={{ margin: "-60px" }}
           className="grid gap-6 md:grid-cols-2"
         >
           {activities.map((item, i) => {
@@ -132,7 +132,7 @@ export default function FundacionPage() {
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true }}
+          viewport={{ margin: "-60px" }}
           className="mt-10 overflow-hidden rounded-2xl"
         >
           <img
@@ -170,7 +170,7 @@ export default function FundacionPage() {
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-80px" }}
+          viewport={{ margin: "-80px" }}
           className="relative z-10 mx-auto max-w-4xl px-6 py-16 md:py-20"
         >
           <h2 className="font-serif text-2xl font-bold md:text-3xl">

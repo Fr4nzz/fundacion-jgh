@@ -41,7 +41,7 @@ function MiracleBlock({ miracle }: { miracle: Miracle }) {
       variants={fadeUp}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-60px" }}
+      viewport={{ margin: "-60px" }}
       className="relative rounded-2xl glass-subtle p-6 border-l-4 border-l-secondary/50"
     >
       <Badge variant="secondary" className="mb-3 text-xs uppercase">
@@ -135,7 +135,7 @@ export default function MilagrosPage() {
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
+          viewport={{ margin: "-60px" }}
           className="grid gap-6 md:grid-cols-2"
         >
           {testimonials.map((item, i) => (

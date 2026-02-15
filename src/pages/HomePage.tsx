@@ -44,7 +44,7 @@ export default function HomePage() {
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-80px" }}
+          viewport={{ margin: "-80px" }}
           className="grid gap-8 md:grid-cols-3"
         >
           {PILLAR_KEYS.map((key, i) => {
@@ -108,7 +108,7 @@ export default function HomePage() {
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-80px" }}
+          viewport={{ margin: "-80px" }}
           className="relative z-10 mx-auto max-w-4xl px-6 py-16 text-center md:py-20"
         >
           <h2 className="font-serif text-2xl font-bold leading-tight md:text-3xl drop-shadow-[0_2px_8px_rgba(0,0,0,0.1)]">

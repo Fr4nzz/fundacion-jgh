@@ -14,7 +14,7 @@ export default function TimelineItem({ date, title, children }: TimelineItemProp
       variants={fadeUp}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-60px" }}
+      viewport={{ margin: "-60px" }}
       className="relative pl-8 pb-12 last:pb-0"
     >
       {/* Timeline line — celestial gradient */}

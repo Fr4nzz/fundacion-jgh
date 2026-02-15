@@ -175,7 +175,7 @@ export default function OracionPage() {
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
+          viewport={{ margin: "-60px" }}
           className="grid gap-6 md:grid-cols-2"
         >
           {quotes.map((quote, i) => (
