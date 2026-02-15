@@ -11,7 +11,7 @@ import CopyButton from "@/components/shared/CopyButton";
 import DonationModal from "@/components/shared/DonationModal";
 import ReferencesSection from "@/components/shared/ReferencesSection";
 import TextWithRefs from "@/components/shared/TextWithRefs";
-import { fadeUp, staggerContainer } from "@/lib/animations";
+import { fadeUp, staggerContainer, hoverLift } from "@/lib/animations";
 import {
   BANK_ACCOUNT,
   BANK_RUC,
@@ -46,7 +46,7 @@ export default function FundacionPage() {
   return (
     <>
       {/* Hero with real Archidona photo */}
-      <section className="bg-muted">
+      <section className="bg-sky-mist">
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-8 px-6 py-16 md:flex-row md:py-20">
           <motion.div
             variants={fadeUp}
@@ -57,6 +57,7 @@ export default function FundacionPage() {
             <h1 className="font-serif text-4xl font-bold text-foreground md:text-5xl">
               {t("hero.title")}
             </h1>
+            <div className="h-[2px] w-16 rounded-full bg-gradient-to-r from-secondary/60 via-secondary to-secondary/60" />
             <p className="text-lg leading-relaxed text-muted-foreground">
               {t("hero.subtitle")}
             </p>
@@ -70,7 +71,7 @@ export default function FundacionPage() {
             <img
               src={import.meta.env.BASE_URL + "images/integrantes-devotos.jpeg"}
               alt="Integrantes de la Fundación"
-              className="rounded-lg shadow-md"
+              className="rounded-2xl shadow-lg ring-1 ring-white/50"
             />
           </motion.div>
         </div>
@@ -105,10 +106,12 @@ export default function FundacionPage() {
           {activities.map((item, i) => {
             const Icon = ACTIVITY_ICONS[i];
             return (
-              <motion.div key={i} variants={fadeUp}>
-                <Card className="border-border h-full">
+              <motion.div key={i} variants={fadeUp} whileHover={hoverLift}>
+                <Card className="h-full">
                   <CardContent className="flex gap-4 pt-6">
-                    <Icon className="h-6 w-6 shrink-0 text-secondary" />
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-celestial/10 to-secondary/10">
+                      <Icon className="h-5 w-5 text-secondary" />
+                    </div>
                     <div>
                       <h3 className="mb-1 font-semibold text-foreground">
                         {item.title}
@@ -130,7 +133,7 @@ export default function FundacionPage() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="mt-10 overflow-hidden rounded-lg"
+          className="mt-10 overflow-hidden rounded-2xl"
         >
           <img
             src={import.meta.env.BASE_URL + "images/integrantes-devotos-2.jpeg"}
@@ -153,13 +156,22 @@ export default function FundacionPage() {
       </SectionContainer>
 
       {/* Donation section */}
-      <section className="bg-[#1E3A5F] text-white">
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#2A4F7A] via-[#345f8f] to-[#3B6B9C] text-white">
+        {/* Cloud wisps */}
+        <div
+          className="pointer-events-none absolute -right-20 -top-10 h-48 w-64 rounded-full opacity-[0.08]"
+          style={{
+            background: "radial-gradient(ellipse at center, white 0%, transparent 70%)",
+            filter: "blur(30px)",
+            animation: "cloud-float-1 12s ease-in-out infinite",
+          }}
+        />
         <motion.div
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-80px" }}
-          className="mx-auto max-w-4xl px-6 py-16 md:py-20"
+          className="relative z-10 mx-auto max-w-4xl px-6 py-16 md:py-20"
         >
           <h2 className="font-serif text-2xl font-bold md:text-3xl">
             {t("donate.title")}
@@ -167,15 +179,15 @@ export default function FundacionPage() {
           <p className="mt-2 text-lg text-white/80">{t("donate.heading")}</p>
           <p className="mt-4 text-base text-white/70">{t("donate.body")}</p>
 
-          {/* Bank card */}
-          <div className="mt-8 rounded-lg bg-white/10 p-6">
+          {/* Bank card — glass on dark */}
+          <div className="mt-8 rounded-xl bg-white/10 p-6 backdrop-blur-sm border border-white/10">
             <p className="text-xs font-medium uppercase tracking-wider text-white/60">
               {t("donate.bankLabel")}
             </p>
             <div className="mt-3 space-y-1 font-mono text-sm">
               <p>
                 {t("donate.accountLabel")}:{" "}
-                <span className="font-semibold text-[#C8A45C]">
+                <span className="font-semibold text-sunrise-warm">
                   {BANK_ACCOUNT}
                 </span>
               </p>
@@ -193,7 +205,10 @@ export default function FundacionPage() {
               <h3 className="mb-3 font-semibold">{t("donate.otherWays")}</h3>
               <ul className="space-y-2 text-sm text-white/80">
                 {otherItems.map((item, i) => (
-                  <li key={i}>• {item}</li>
+                  <li key={i} className="flex items-start gap-2">
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-secondary/60" />
+                    {item}
+                  </li>
                 ))}
               </ul>
             </div>
@@ -240,7 +255,7 @@ export default function FundacionPage() {
                 "images/amable-y-narcisa-villarroel.jpeg"
               }
               alt="José Amable Villarroel y Narcisa Villarroel"
-              className="rounded-lg"
+              className="rounded-xl ring-1 ring-white/50"
             />
           </div>
         </div>

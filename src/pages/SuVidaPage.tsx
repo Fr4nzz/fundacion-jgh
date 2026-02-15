@@ -20,10 +20,10 @@ export default function SuVidaPage() {
       <PageHero compact>
         <div className="flex flex-col items-center gap-8 md:flex-row md:text-left">
           <div className="flex-1">
-            <h1 className="font-serif text-4xl font-bold text-foreground md:text-5xl">
+            <h1 className="font-serif text-4xl font-bold text-white md:text-5xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.15)]">
               {t("hero.title")}
             </h1>
-            <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
+            <p className="mt-4 text-lg leading-relaxed text-white/80">
               {t("hero.subtitle")}
             </p>
           </div>
@@ -31,13 +31,13 @@ export default function SuVidaPage() {
             <img
               src={import.meta.env.BASE_URL + "images/biografia-jose-gregorio-main.png"}
               alt="San José Gregorio Hernández"
-              className="rounded-lg shadow-md"
+              className="rounded-xl shadow-lg ring-2 ring-white/20"
             />
           </div>
         </div>
       </PageHero>
 
-      <section className="bg-card">
+      <section className="bg-transparent">
         <div className="mx-auto max-w-3xl px-6 py-16 md:py-20">
           {sections.map((section, i) => (
             <TimelineItem

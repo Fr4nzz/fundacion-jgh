@@ -11,10 +11,12 @@ interface TestimonialCardProps {
 
 export default function TestimonialCard({ name, location, quote, sourceName, sourceUrl }: TestimonialCardProps) {
   return (
-    <Card className="border-border">
+    <Card>
       <CardContent className="pt-6">
+        {/* Quote mark */}
+        <span className="mb-2 block font-serif text-3xl leading-none text-secondary/40 select-none">&ldquo;</span>
         <p className="text-base leading-relaxed text-muted-foreground italic">
-          &ldquo;{quote}&rdquo;
+          {quote}&rdquo;
         </p>
         <div className="mt-4 flex items-end justify-between gap-2">
           <div>

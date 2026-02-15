@@ -8,7 +8,7 @@ import PageHero from "@/components/shared/PageHero";
 import SectionContainer from "@/components/shared/SectionContainer";
 import SectionHeading from "@/components/shared/SectionHeading";
 import TestimonialCard from "@/components/shared/TestimonialCard";
-import { fadeUp, staggerContainer } from "@/lib/animations";
+import { fadeUp, staggerContainer, hoverLift } from "@/lib/animations";
 import { PHONE_1, PHONE_2 } from "@/lib/constants";
 
 interface MiracleSource {
@@ -42,7 +42,7 @@ function MiracleBlock({ miracle }: { miracle: Miracle }) {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-60px" }}
-      className="border-l-4 border-secondary pl-6"
+      className="relative rounded-2xl glass-subtle p-6 border-l-4 border-l-secondary/50"
     >
       <Badge variant="secondary" className="mb-3 text-xs uppercase">
         {miracle.badge}
@@ -67,7 +67,7 @@ function MiracleBlock({ miracle }: { miracle: Miracle }) {
             className="flex items-center gap-1.5 text-sm font-medium text-secondary hover:text-secondary/80 transition-colors cursor-pointer"
           >
             <ChevronDown
-              className={`h-4 w-4 transition-transform ${open ? "rotate-180" : ""}`}
+              className={`h-4 w-4 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
             />
             {miracle.sourcesLabel}
           </button>
@@ -113,14 +113,13 @@ export default function MilagrosPage() {
     <>
       <PageHero
         compact
-        className="bg-[#1E3A5F] text-white"
         headline={t("hero.title")}
         subtitle={t("hero.subtitle")}
       />
 
       {/* Official miracles */}
-      <section className="bg-card">
-        <div className="mx-auto max-w-4xl space-y-10 px-6 py-16 md:py-20">
+      <section className="bg-transparent">
+        <div className="mx-auto max-w-4xl space-y-8 px-6 py-16 md:py-20">
           {miracles.map((miracle, i) => (
             <MiracleBlock key={i} miracle={miracle} />
           ))}
@@ -140,7 +139,7 @@ export default function MilagrosPage() {
           className="grid gap-6 md:grid-cols-2"
         >
           {testimonials.map((item, i) => (
-            <motion.div key={i} variants={fadeUp}>
+            <motion.div key={i} variants={fadeUp} whileHover={hoverLift}>
               <TestimonialCard
                 name={item.name}
                 location={item.location}
@@ -159,6 +158,7 @@ export default function MilagrosPage() {
           <h2 className="font-serif text-2xl font-bold text-foreground md:text-3xl">
             {t("shareCta.title")}
           </h2>
+          <div className="mx-auto mt-3 h-[2px] w-16 rounded-full bg-gradient-to-r from-transparent via-secondary to-transparent" />
           <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-muted-foreground">
             {t("shareCta.body")}
           </p>

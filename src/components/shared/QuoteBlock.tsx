@@ -8,11 +8,17 @@ interface QuoteBlockProps {
 
 export default function QuoteBlock({ text, attribution, className }: QuoteBlockProps) {
   return (
-    <blockquote className={cn("relative mx-auto max-w-2xl text-center", className)}>
-      <span className="absolute -top-6 left-1/2 -translate-x-1/2 font-serif text-6xl text-secondary/30 select-none">
+    <blockquote
+      className={cn(
+        "relative mx-auto max-w-2xl rounded-2xl px-8 py-6 text-center glass-subtle",
+        className
+      )}
+    >
+      {/* Decorative golden quote mark */}
+      <span className="absolute -top-4 left-1/2 -translate-x-1/2 font-serif text-6xl text-shimmer select-none leading-none">
         &ldquo;
       </span>
-      <p className="font-serif text-lg italic leading-relaxed text-foreground md:text-xl">
+      <p className="mt-4 font-serif text-lg italic leading-relaxed text-foreground md:text-xl">
         {text}
       </p>
       {attribution && (

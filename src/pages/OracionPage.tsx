@@ -15,7 +15,7 @@ import SectionContainer from "@/components/shared/SectionContainer";
 import SectionHeading from "@/components/shared/SectionHeading";
 import PrayerSection from "@/components/shared/PrayerSection";
 import { useMobile } from "@/hooks/useMobile";
-import { fadeUp, staggerContainer } from "@/lib/animations";
+import { fadeUp, staggerContainer, hoverLift } from "@/lib/animations";
 
 interface Prayer {
   id: string;
@@ -59,10 +59,10 @@ function HymnPlayer() {
           <button
             key={v.videoId}
             onClick={() => setActiveId(v.videoId)}
-            className={`rounded-full border px-3 py-1.5 text-xs font-medium transition-colors cursor-pointer ${
+            className={`rounded-full border px-3 py-1.5 text-xs font-medium transition-all duration-300 cursor-pointer ${
               activeId === v.videoId
-                ? "border-secondary bg-secondary text-secondary-foreground"
-                : "border-border bg-card text-muted-foreground hover:border-secondary/50"
+                ? "border-secondary bg-secondary text-secondary-foreground shadow-[0_2px_10px_rgba(212,162,69,0.2)]"
+                : "border-border bg-white/40 text-muted-foreground hover:border-secondary/50 hover:bg-white/60"
             }`}
           >
             {v.label}
@@ -72,7 +72,7 @@ function HymnPlayer() {
       </div>
 
       {/* YouTube embed */}
-      <div className="relative w-full overflow-hidden rounded-lg border border-border" style={{ paddingBottom: "56.25%" }}>
+      <div className="relative w-full overflow-hidden rounded-xl border border-border/50" style={{ paddingBottom: "56.25%" }}>
         <iframe
           key={activeId}
           className="absolute inset-0 h-full w-full"
@@ -142,7 +142,7 @@ export default function OracionPage() {
         <p className="mb-6 text-base leading-relaxed text-muted-foreground">
           {t("novena.intro")}
         </p>
-        <Card className="mb-6 border-border">
+        <Card className="mb-6">
           <CardHeader>
             <CardTitle className="font-serif text-lg">
               {t("novena.openingPrayerTitle")}
@@ -157,7 +157,7 @@ export default function OracionPage() {
         <ol className="space-y-3">
           {novenaDays.map((day) => (
             <li key={day.day} className="flex items-baseline gap-3">
-              <span className="shrink-0 font-serif text-lg font-bold text-secondary">
+              <span className="shrink-0 flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-br from-celestial/15 to-secondary/15 font-serif text-sm font-bold text-secondary">
                 {day.day}
               </span>
               <span className="text-sm text-foreground">
@@ -179,8 +179,8 @@ export default function OracionPage() {
           className="grid gap-6 md:grid-cols-2"
         >
           {quotes.map((quote, i) => (
-            <motion.div key={i} variants={fadeUp}>
-              <div className="border-l-3 border-secondary pl-4 py-2">
+            <motion.div key={i} variants={fadeUp} whileHover={hoverLift}>
+              <div className="rounded-xl glass-subtle p-4 border-l-3 border-secondary/40">
                 <p className="mb-1 text-xs font-medium uppercase tracking-wider text-secondary">
                   {quote.topic}
                 </p>
@@ -199,7 +199,7 @@ export default function OracionPage() {
         <p className="mb-6 text-base leading-relaxed text-muted-foreground">
           {t("hymn.description")}
         </p>
-        <Card className="border-border">
+        <Card>
           <CardContent className="pt-6">
             <p className="whitespace-pre-line text-center font-serif text-base italic leading-relaxed text-foreground">
               {t("hymn.chorus")}

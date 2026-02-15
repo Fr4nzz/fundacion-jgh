@@ -16,7 +16,17 @@ export default function SectionContainer({
   id,
 }: SectionContainerProps) {
   return (
-    <section id={id} className={cn(alt ? "bg-muted" : "bg-card", className)}>
+    <section
+      id={id}
+      className={cn(
+        "relative",
+        alt ? "bg-sky-mist" : "bg-transparent",
+        className
+      )}
+    >
+      {/* Soft cloud divider at top */}
+      <div className="divider-cloud" />
+
       <motion.div
         variants={fadeUp}
         initial="hidden"

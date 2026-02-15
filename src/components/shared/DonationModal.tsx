@@ -26,7 +26,7 @@ export default function DonationModal({ open, onOpenChange }: DonationModalProps
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-md">
+      <DialogContent className="max-w-md glass-strong rounded-2xl">
         <DialogHeader>
           <DialogTitle className="font-serif text-xl">
             {t("donate.modalTitle")}
@@ -37,12 +37,20 @@ export default function DonationModal({ open, onOpenChange }: DonationModalProps
         </DialogHeader>
 
         <div className="space-y-4">
-          {/* Bank info card */}
-          <div className="rounded-lg bg-[#1E3A5F] p-5 text-white">
+          {/* Bank info card — celestial dark */}
+          <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-[#2A4F7A] via-[#345f8f] to-[#3B6B9C] p-5 text-white">
+            {/* Subtle cloud wisp */}
+            <div
+              className="pointer-events-none absolute -right-10 -top-10 h-32 w-40 rounded-full opacity-10"
+              style={{
+                background: "radial-gradient(ellipse at center, white 0%, transparent 70%)",
+                filter: "blur(20px)",
+              }}
+            />
             <p className="text-xs font-medium uppercase tracking-wider text-white/60">
               {t("donate.bankLabel")}
             </p>
-            <div className="mt-3 space-y-2 text-sm">
+            <div className="relative mt-3 space-y-2 text-sm">
               <div className="flex justify-between">
                 <span className="text-white/70">{t("donate.beneficiary")}</span>
                 <span className="text-right font-medium text-white">
@@ -51,7 +59,7 @@ export default function DonationModal({ open, onOpenChange }: DonationModalProps
               </div>
               <div className="flex justify-between">
                 <span className="text-white/70">{t("donate.accountNumber")}</span>
-                <span className="font-mono font-semibold text-[#C8A45C]">
+                <span className="font-mono font-semibold text-sunrise-warm">
                   {BANK_ACCOUNT}
                 </span>
               </div>

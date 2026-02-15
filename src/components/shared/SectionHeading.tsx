@@ -18,8 +18,13 @@ export default function SectionHeading({
       <h2 className="font-serif text-3xl font-bold tracking-tight text-foreground md:text-4xl">
         {children}
       </h2>
+      {/* Golden accent line */}
+      <div className={cn(
+        "mt-3 h-[2px] w-16 rounded-full bg-gradient-to-r from-secondary/60 via-secondary to-secondary/60",
+        centered && "mx-auto"
+      )} />
       {subtitle && (
-        <p className="mt-3 text-lg leading-relaxed text-muted-foreground">
+        <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
           {subtitle}
         </p>
       )}

@@ -17,10 +17,15 @@ export default function TimelineItem({ date, title, children }: TimelineItemProp
       viewport={{ once: true, margin: "-60px" }}
       className="relative pl-8 pb-12 last:pb-0"
     >
-      {/* Timeline line */}
-      <div className="absolute left-[11px] top-2 bottom-0 w-px bg-border last:hidden" />
-      {/* Timeline dot */}
-      <div className="absolute left-0 top-2 h-[22px] w-[22px] rounded-full border-2 border-primary bg-card" />
+      {/* Timeline line — celestial gradient */}
+      <div
+        className="absolute left-[11px] top-2 bottom-0 w-px last:hidden"
+        style={{
+          background: "linear-gradient(180deg, rgba(90,155,213,0.4) 0%, rgba(212,162,69,0.2) 100%)",
+        }}
+      />
+      {/* Timeline dot — glowing orb */}
+      <div className="absolute left-0 top-2 h-[22px] w-[22px] rounded-full border-2 border-celestial bg-white/80 shadow-[0_0_10px_rgba(90,155,213,0.3)]" />
 
       <div className="space-y-3">
         {date && (

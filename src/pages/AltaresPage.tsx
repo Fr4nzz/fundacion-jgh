@@ -29,7 +29,7 @@ export default function AltaresPage() {
       <PageHero compact headline={t("hero.title")} subtitle={t("hero.subtitle")} />
 
       {/* Chronology timeline */}
-      <section className="bg-card">
+      <section className="bg-transparent">
         <div className="mx-auto max-w-3xl px-6 py-16 md:py-20">
           {timeline.map((item, i) => (
             <TimelineItem key={i} date={item.year} title={<TextWithRefs text={item.event} references={references} />}>
