@@ -66,7 +66,7 @@ export default function FundacionPage() {
             variants={fadeUp}
             initial="hidden"
             animate="visible"
-            className="w-full shrink-0 md:w-80"
+            className="w-full shrink-0 md:w-96"
           >
             <img
               src={import.meta.env.BASE_URL + "images/integrantes-devotos.jpeg"}
@@ -138,7 +138,7 @@ export default function FundacionPage() {
           <img
             src={import.meta.env.BASE_URL + "images/integrantes-devotos-2.jpeg"}
             alt="Actividades de la Fundación"
-            className="w-full object-cover"
+            className="w-full max-h-[24rem] object-cover"
           />
         </motion.div>
       </SectionContainer>
