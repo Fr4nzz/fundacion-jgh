@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "headline1": "A doctor who gave everything for the poor.",
+    "headline2": "A saint who continues to heal from heaven.",
+    "subtitle": "San José Gregorio Hernández (1864–1919) — The Doctor of the Poor, Venezuela's first male saint, canonized on October 19, 2025. His example of faith, science, and charity lives on in the Ecuadorian Amazon through our Foundation in Archidona, Napo.",
+    "ctaPrimary": "DISCOVER HIS STORY",
+    "ctaSecondary": "SUPPORT OUR MISSION"
+  },
+  "pillars": {
+    "title": "Faith, Science, and Charity",
+    "faith": {
+      "title": "Faith",
+      "description": "He attended Mass every morning before dawn. He prayed the Angelus on his knees. He tried twice to become a monk. But God had another plan for him: to serve the sick as a doctor."
+    },
+    "science": {
+      "title": "Science",
+      "description": "He founded the first bacteriology department in all of Latin America. He brought the first microscopes to Venezuela. He studied in Paris under disciples of Pasteur. He was a scientist before he was a saint."
+    },
+    "charity": {
+      "title": "Charity",
+      "description": "He treated anyone who could not pay free of charge. He bought medicines with his own money. He hung a bag on his door so that patients could take what they needed without shame."
+    }
+  },
+  "stat": {
+    "number": 2100,
+    "prefix": "+",
+    "label": "testimonies of favors and healings documented in his cause for canonization. Over a century of intercession. From heaven, the Doctor is still seeing patients."
+  },
+  "cta": {
+    "heading": "His charity did not end in 1919. It continues through those of us who follow his example.",
+    "body": "The Fundación Santísima Trinidad Dr. José Gregorio Hernández 3M works from Archidona, in the Ecuadorian Amazon, to keep the legacy of the holy doctor alive: prayer, spiritual healing, and service to the most vulnerable communities of Cotundo, Archidona, Tena, and Puerto Napo.",
+    "buttonDonate": "I WANT TO DONATE",
+    "buttonLearn": "ABOUT THE FOUNDATION"
+  },
+  "closingQuote": {
+    "text": "There is an infinitely powerful and wise being, creator of the admirably ordered universe we know. This being we call God.",
+    "attribution": "San José Gregorio Hernández"
+  }
+}

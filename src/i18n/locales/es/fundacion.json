@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "La Fundación",
+    "subtitle": "Fundación Santísima Trinidad Dr. José Gregorio Hernández 3M — Sede Archidona. Continuando el legado del santo médico en la Amazonía ecuatoriana."
+  },
+  "mission": {
+    "title": "Nuestra misión",
+    "paragraphs": [
+      "San José Gregorio Hernández dedicó su vida a curar a quienes no podían pagar. Compraba medicinas con su propio dinero. Caminaba bajo la lluvia para visitar enfermos en sus casas. Nunca cobró a un paciente pobre.",
+      "Murió camino a atender a una anciana enferma, con medicinas que él mismo acababa de comprar.",
+      "Esa caridad no murió con él. Vive en cada persona que decide servir a los demás en su nombre.",
+      "La Fundación Santísima Trinidad Dr. José Gregorio Hernández 3M fue constituida legalmente en 2021 (Acuerdo Ministerial No. MIES-2021-036) — el mismo año en que el Doctor fue beatificado — con el propósito de mejorar las condiciones de vida de las personas más necesitadas en la Amazonía ecuatoriana. Desde nuestra sede en Archidona, provincia de Napo, trabajamos para que quienes buscan alivio a sus dolencias físicas y sobre todo del alma encuentren en la oración y la intercesión del «Hermanito Gregorio» la fortaleza que necesitan.",
+      "Con presencia en tres sedes a nivel nacional — Archidona, Riobamba y Quito — nuestra Fundación mantiene vivo el legado del santo médico de los pobres."
+    ]
+  },
+  "quote": {
+    "text": "La mayoría de estas personas no tienen recursos; no les voy a negar la consulta y no les voy a hacer pasar por la pena de decirme que no tienen dinero. Dios ayudará.",
+    "attribution": "San José Gregorio Hernández"
+  },
+  "activities": {
+    "title": "Qué hacemos",
+    "items": [
+      {
+        "title": "Oración y sanación espiritual",
+        "description": "Realizamos reuniones de oración comunitaria donde se reza el Santo Rosario, se reflexiona sobre la Palabra de Dios, se reza la Coronilla de la Divina Misericordia y oraciones específicas a San José Gregorio Hernández."
+      },
+      {
+        "title": "Obra social con los más necesitados",
+        "description": "Llevamos alegría y esperanza a las comunidades más vulnerables de nuestra región amazónica. Realizamos entregas solidarias en Cotundo, Archidona, Tena y Puerto Napo."
+      },
+      {
+        "title": "Material devocional",
+        "description": "Repartimos gratuitamente novenas, estampas de la Santísima Trinidad, de la Virgen María y de San José Gregorio Hernández, para que los devotos puedan arreglar un pequeño altar en sus hogares."
+      },
+      {
+        "title": "Presencia nacional",
+        "description": "La Fundación opera en tres sedes a nivel de Ecuador: Archidona (Napo), Riobamba (Chimborazo) y Quito (Pichincha)."
+      }
+    ]
+  },
+  "ecuadorConnection": {
+    "title": "Un vínculo de sangre y fe entre Venezuela y Ecuador",
+    "paragraphs": [
+      "Pocos saben que San José Gregorio Hernández tiene un vínculo de sangre con Ecuador. A través de la familia Febres-Cordero, que migró de Venezuela, José Gregorio era primo en tercer grado del Santo Hermano Miguel — el único santo canonizado ecuatoriano — y tío en cuarto grado del expresidente León Febres-Cordero Ribadeneyra.",
+      "La devoción a José Gregorio Hernández en Ecuador tiene raíces profundas: desde 1982, la Parroquia San Antonio de Padua en Guayaquil mantiene un espacio dedicado a su veneración. Nuestra Fundación opera con tres sedes a nivel nacional — Archidona, Riobamba y Quito — llevando la fe y la caridad del «Hermanito Gregorio» a los rincones de la Amazonía y más allá.",
+      "La fe en el santo médico no conoce fronteras. Ecuador es tierra fértil para su devoción."
+    ]
+  },
+  "donate": {
+    "title": "Cómo puedes ayudar",
+    "heading": "Tu donación continúa la obra del Doctor.",
+    "body": "José Gregorio Hernández nunca rechazó a un paciente por falta de dinero. Nosotros seguimos su ejemplo. Pero para servir, necesitamos tu ayuda.",
+    "otherWays": "Otras formas de apoyar:",
+    "otherItems": [
+      "Comparte nuestra misión con tu familia y amigos",
+      "Únete a nuestras actividades de oración",
+      "Envíanos tu testimonio de fe",
+      "Hazte voluntario"
+    ],
+    "contact": "Contáctanos directamente",
+    "bankLabel": "Banco Pichincha — Cuenta de Ahorros",
+    "accountLabel": "Nº de Cuenta",
+    "donateNow": "DONAR AHORA"
+  },
+  "legal": {
+    "title": "Transparencia y respaldo legal",
+    "body": "La Fundación Santísima Trinidad Dr. José Gregorio Hernández 3M es una organización legalmente constituida en Ecuador, registrada ante el Ministerio de Inclusión Económica y Social (MIES) mediante Acuerdo Ministerial No. MIES-2021-036.",
+    "boardTitle": "Directiva — Sede Archidona",
+    "president": "Presidente: Sr. José Amable Villarroel Trávez",
+    "secretary": "Secretaria: Abg. Ximena Espín Pavón"
+  }
+}

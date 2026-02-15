@@ -1,0 +1,75 @@
+{
+  "hero": {
+    "title": "Oración",
+    "subtitle": "«Dios ayudará.» — Con esas dos palabras, San José Gregorio resumió toda su filosofía de vida. Aquí encontrarás las oraciones para pedir su intercesión."
+  },
+  "prayers": [
+    {
+      "id": "oficial",
+      "title": "Oración oficial (post-canonización)",
+      "text": "Padre bueno,\npor intercesión de San José Gregorio Hernández,\nte pedimos que nos des salud de cuerpo y alma\npara ser testigos de fe, esperanza y caridad,\ncomprometidos en la construcción de un mundo\ndonde reine tu verdad, justicia y paz.\nPor Jesucristo, nuestro Señor.\nAmén."
+    },
+    {
+      "id": "causa",
+      "title": "Oración de la causa",
+      "text": "Señor Jesucristo,\nque infundiste en tu siervo José Gregorio\nla constancia en la virtud,\nla pureza en sus acciones,\nun gran amor por ti,\na tu Santísima Madre y al prójimo,\ndígnate glorificarlo ante tu iglesia.\n\nHaz que yo, imitando sus virtudes,\nme acerque más a ti,\ny por los méritos de tu Pasión y Muerte,\nconcédeme la gracia que te pido...\n\n(Hacer la petición en silencio.)\n\nVirgen de Coromoto, Patrona de Venezuela,\nintercede por la glorificación de tu devoto\nJosé Gregorio Hernández. Amén.\n\nPadre Nuestro, Ave María y Gloria."
+    },
+    {
+      "id": "enfermos",
+      "title": "Oración por los enfermos",
+      "text": "Tú, siervo bendito de Dios,\noye mis gemidos, escucha mis súplicas\ne intercede ante tu Señor\npor mi pronta recuperación y por mi ansiada salud.\n\nBondadoso Dr. José Gregorio Hernández,\npor tu generosidad con los pacientes,\ndeposito en ti mi confianza\npara que seas fiel intermediario\nante nuestro Dios, Nuestro Señor,\ntu confidente y amigo.\n\nNo me abandones.\nSuplico al Sagrado Corazón de Jesús y al Espíritu Santo,\npara que ilumine a los médicos,\nque identifiquen bien mi enfermedad\ny encuentren los medicamentos y tratamientos\napropiados para curarme.\n\nA mi Madre, la Virgen María, suplico,\nque me dé fuerzas para soportar con ánimo y esperanza\ntodas las incomodidades de mi enfermedad\ny así redimirme de todas mis faltas\ncomo mi Señor Jesús sufrió en la Cruz.\n\n¡Señor yo te alabo y te bendigo!\n¡Gloria a ti Señor!\nTe doy gracias por crearme, redimirme y hacerme cristiano.\nGracias Jesús mío. ¡Gracias! ¡Amén!\n\n(Especificar la petición implorando la milagrosa mediación del Dr. José Gregorio Hernández, y rezar tres Padrenuestros, tres Avemarías y tres Glorias.)"
+    },
+    {
+      "id": "diaria",
+      "title": "Oración diaria",
+      "text": "Oh Señor Dios mío que todo lo puedes\ny que habéis acogido en tu seno\na vuestro amado siervo José Gregorio,\nque por vuestra gran misericordia\nle diste el poder de curar enfermos en este mundo,\ndale Señor la gracia de curarme,\ncomo médico espiritual,\nmi alma y mi cuerpo\nsi ha de ser para tu gloria.\n\nTe pido esto Señor Dios mío\nen nombre de tu amado Hijo\nquien enseñó a orar diciendo:\nPadre Nuestro..."
+    },
+    {
+      "id": "juventud",
+      "title": "Oración por la juventud ecuatoriana",
+      "text": "Oh Santísima Trinidad, Dios, uno en esencia y trino en personas,\nconcede a la niñez y a la juventud ecuatoriana,\ncomo concediste desde tus tiernos años a José Gregorio Hernández,\nla gracia de amarte sobre todas las cosas\ny al prójimo solo por tu amor;\naleja de sus mentes y sus corazones\nel error, la mentira, el engaño, el egoísmo,\nel odio, la envidia malsana\ny el materialismo burdo que tanto daño está causando a la juventud.\n\nHaz que nuestros profesionales tengan constantemente en sus mentes\nel ejemplo de José Gregorio, que entregó todo su saber\ny su vida a favor de sus prójimos,\nespecialmente de los pobres, de los enfermos\ncarentes de recursos económicos y de todos los necesitados.\n\nApiádate, Señor, de nosotros\ny escucha mi humilde oración\ny la intercesión de tu Siervo\nJosé Gregorio Hernández Cisneros,\nMédico de los Pobres,\ny concédeme la gracia que te pido en esta oración.\nAmén."
+    },
+    {
+      "id": "sanacion",
+      "title": "Oración de sanación (versión ecuatoriana)",
+      "text": "Espíritu Santo, Doctor José Gregorio Hernández,\nmédico espiritual, yo te invoco y te imploro\nque escuches mis súplicas\npara la salud de (nombre de la persona),\nque se recupere pronto de su enfermedad,\naunque sea poco a poco.\n\nSi es así, yo te estaré totalmente agradecido\ny daré una pequeña limosna\na la persona que más lo necesite\ny ayudaré a tu iglesia\naunque sea con lo poco que poseo,\nen donde te veneramos en Ecuador eternamente.\nAmén.\n\n(Rezar también un Padre Nuestro, un Ave María y un Gloria.)"
+    }
+  ],
+  "novena": {
+    "title": "Novena a San José Gregorio Hernández",
+    "intro": "La novena completa consiste en nueve días de meditaciones que abordan la Santísima Trinidad, la Eucaristía, la Pasión de Cristo, el arrepentimiento, las cinco llagas de Cristo y la Santísima Virgen María.",
+    "openingPrayerTitle": "Oración de apertura",
+    "dayPrefix": "Día",
+    "openingPrayer": "¡Oh Trinidad amabilísima!:\nEn Ti creo, en Ti espero\ny te amo con todo mi corazón.\nTe pido que llenes mi alma de tu gracia\ny me conserves siempre en tu amistad.\n\n¡Señor Dios Rey Todopoderoso!:\nEn Tus manos están puestas todas las cosas.\nSi Tú quieres salvar a tu pueblo\nno hay quien pueda resistir a tu voluntad...\n\nTe adoramos y bendecimos\npor las extraordinarias gracias que concediste\na tu Siervo José Gregorio,\nespecialmente por aquella de amarte a Ti\nsobre todas las cosas\ny amar al prójimo como a sí mismo...\n\nDígnate Trinidad misericordiosísima\noír a tu Siervo,\nconcediéndonos el favor que te pedimos\nsi es para mayor gloria tuya y bien de nuestra alma.\nTe lo pedimos por los méritos de Jesucristo Nuestro Señor.\nAmén.",
+    "days": [
+      { "day": 1, "theme": "Dios Padre Omnipotente — Alabanza y súplica" },
+      { "day": 2, "theme": "El Divino Verbo — La Eucaristía y la Comunión" },
+      { "day": 3, "theme": "La Pasión de Cristo — Las profecías del Profeta" },
+      { "day": 4, "theme": "El arrepentimiento — Meditación del Salmo 51 (Miserere)" },
+      { "day": 5, "theme": "Las cinco llagas de Cristo — Humanidad y caridad de JGH" },
+      { "day": 6, "theme": "El Espíritu Santo — Los dones concedidos a JGH" },
+      { "day": 7, "theme": "La Santísima Virgen María — El Magníficat" },
+      { "day": 8, "theme": "Dios Padre protector — Ayuda a los pobres" },
+      { "day": 9, "theme": "Dios Padre redentor — Intercesión final" }
+    ]
+  },
+  "quotes": {
+    "title": "Sus palabras — Frases célebres",
+    "items": [
+      { "topic": "Sobre la caridad", "text": "La mayoría de estas personas no tienen recursos; no les voy a negar la consulta y no les voy a hacer pasar por la pena de decirme que no tienen dinero. Dios ayudará." },
+      { "topic": "Sobre la vocación", "text": "Debo marcharme a mi pueblo. En Isnotú no hay médicos y mi puesto está allí, donde un día mi propia madre me pidió que volviera para que aliviara los dolores de las gentes humildes de nuestra tierra." },
+      { "topic": "Sobre Dios", "text": "Hay un ser infinitamente poderoso y sabio, creador del universo admirablemente ordenado que conocemos. Este ser lo llamamos Dios." },
+      { "topic": "Sobre la verdad", "text": "El bien sólo puede venir de la verdad, nunca del error. El error es el veneno de la inteligencia." },
+      { "topic": "Sobre el deber", "text": "En el hombre, el deber es la razón de ser del derecho, de manera que el hombre tiene deberes, antes de tener derechos." },
+      { "topic": "Sobre la bondad humana", "text": "Si en el mundo hay buenos y malos, los malos lo son porque ellos mismos se han hecho malos: pero los buenos no lo son sino con la ayuda de Dios." },
+      { "topic": "Sobre su madre", "text": "Mi madre me enseñó la virtud desde la cuna, me hizo crecer en el conocimiento de Dios y me dio la caridad como guía." },
+      { "topic": "Sobre el bien", "text": "Un hombre auténtico tiene como ideal moral hacer el bien." }
+    ]
+  },
+  "hymn": {
+    "title": "Himno a San José Gregorio Hernández",
+    "description": "El himno oficial de la beatificación, titulado «Siervo Digno y Bueno», fue compuesto por Richard López con arreglos de Miguel Teixeira del Ministerio de Música de la Basílica de Santa Teresa en Caracas.",
+    "chorus": "José Gregorio Hernández\nda paz y consuelo\na todo el que sufre\nsalud al enfermo\ny que también yo\nsiguiendo tu ejemplo\nal Padre le ofrezca\ntodo lo que tengo.\nSiervo digno y bueno.",
+    "listenNote": "El himno completo puede escucharse en las plataformas digitales (Spotify, YouTube) buscando «Himno al Doctor José Gregorio Hernández — MMBST»."
+  }
+}

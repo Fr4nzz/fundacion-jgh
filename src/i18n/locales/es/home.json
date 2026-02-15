@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "headline1": "Un médico que lo dio todo por los pobres.",
+    "headline2": "Un santo que sigue sanando desde el cielo.",
+    "subtitle": "San José Gregorio Hernández (1864–1919) — El Médico de los Pobres, primer santo varón de Venezuela, canonizado el 19 de octubre de 2025. Su ejemplo de fe, ciencia y caridad vive en la Amazonía ecuatoriana a través de nuestra Fundación en Archidona, Napo.",
+    "ctaPrimary": "CONOCE SU HISTORIA",
+    "ctaSecondary": "APOYA NUESTRA MISIÓN"
+  },
+  "pillars": {
+    "title": "Fe, Ciencia y Caridad",
+    "faith": {
+      "title": "Fe",
+      "description": "Asistía a misa cada mañana antes del amanecer. Rezaba el Ángelus de rodillas. Intentó dos veces hacerse monje. Pero Dios tenía otro plan para él: servir a los enfermos como médico."
+    },
+    "science": {
+      "title": "Ciencia",
+      "description": "Fundó la primera cátedra de bacteriología de toda Latinoamérica. Trajo los primeros microscopios a Venezuela. Estudió en París con discípulos de Pasteur. Fue científico antes de ser santo."
+    },
+    "charity": {
+      "title": "Caridad",
+      "description": "Atendía gratis a quien no podía pagar. Compraba las medicinas con su propio dinero. Colocaba una bolsa en su puerta para que los pacientes tomaran lo que necesitaran sin vergüenza."
+    }
+  },
+  "stat": {
+    "number": 2100,
+    "prefix": "+",
+    "label": "testimonios de favores y sanaciones documentados en su causa de canonización. Más de un siglo de intercesión. Desde el cielo, el Doctor sigue atendiendo."
+  },
+  "cta": {
+    "heading": "Su caridad no terminó en 1919. Continúa a través de quienes seguimos su ejemplo.",
+    "body": "La Fundación Santísima Trinidad Dr. José Gregorio Hernández 3M trabaja desde Archidona, en la Amazonía ecuatoriana, para mantener vivo el legado del santo médico: oración, sanación espiritual y servicio a las comunidades más necesitadas de Cotundo, Archidona, Tena y Puerto Napo.",
+    "buttonDonate": "QUIERO DONAR",
+    "buttonLearn": "CONOCER LA FUNDACIÓN"
+  },
+  "closingQuote": {
+    "text": "Hay un ser infinitamente poderoso y sabio, creador del universo admirablemente ordenado que conocemos. Este ser lo llamamos Dios.",
+    "attribution": "San José Gregorio Hernández"
+  }
+}

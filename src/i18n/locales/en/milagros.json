@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "title": "Miracles",
+    "subtitle": "Two miracles confirmed by the Vatican. Over 2,100 documented testimonies. And thousands of faithful who know, in their hearts, that the Doctor is still seeing patients."
+  },
+  "miracles": [
+    {
+      "badge": "FIRST MIRACLE",
+      "pullQuote": "\"Be at peace, everything will be all right.\"",
+      "title": "Yaxury Solórzano (2017)",
+      "paragraphs": [
+        "On March 10, 2017, in the state of Guárico, Venezuela, Yaxury Solórzano Ortega, a 10-year-old girl, was shot in the head during a robbery. Multiple pellets struck the right temporoparietal region, causing loss of brain matter, bone loss, and severe hemorrhaging.",
+        "She was transported for over four hours along difficult roads to the Hospital Pablo Acosta Ortiz in San Fernando de Apure. No neurosurgeon was available. She waited 48 hours before being operated on — far beyond the critical 'golden hour.' The neurosurgeon who finally operated on her, Dr. Alexander Krinitzky, later stated: 'Scientifically, the wound was fatal from the start.'",
+        "Her mother, Carmen Ortega, immediately began praying to José Gregorio Hernández. During the surgery, she recounts feeling a hand on her shoulder and hearing a voice that told her: 'Be at peace, everything will be all right.' She also recounts seeing the figure of Hernández in the hospital room.",
+        "On the fourth day after surgery, Yaxury began responding positively to all tests. Within 20 days, she walked out of the hospital completely healed, speaking normally, with no permanent neurological impairment.",
+        "The Vatican's medical commission, composed of seven doctors, unanimously confirmed in January 2020 that the healing had no scientific explanation."
+      ]
+    },
+    {
+      "badge": "SECOND MIRACLE",
+      "pullQuote": "From clinical death to a full life",
+      "title": "Gonzalo Morales Divo",
+      "paragraphs": [
+        "Gonzalo Morales Divo, a Venezuelan businessman living in the United States, suffered a catastrophic multi-organ failure: heart, liver, kidneys, and brain, all compromised simultaneously. Doctors predicted irreversible brain damage.",
+        "His family prayed for eight consecutive days to José Gregorio Hernández. Morales reported seeing the image of José Gregorio twice during his coma. Within a week, he began recovering at a pace that astonished the medical team. In 2022, the Archdiocese of Miami certified that the recovery had no scientific explanation.",
+        "This second miracle opened the door to canonization."
+      ]
+    }
+  ],
+  "testimonials": {
+    "title": "Testimonies from the faithful",
+    "intro": "Over 2,100 testimonies of favors and healings are documented in the cause for canonization. These are some of their voices:",
+    "items": [
+      { "name": "Yorgelis López", "location": "Caracas", "quote": "My son was born at 26 weeks of pregnancy. He is alive thanks to the Doctor." },
+      { "name": "Vicenta Cordero", "location": "Caracas, 1990", "quote": "Her one-year-old daughter developed pneumonia that progressed to a severe lung infection. Doctors said if the drainage did not work that night, there was no hope. She prayed to José Gregorio. Her daughter recovered completely." },
+      { "name": "Carlos Fernández", "location": "Caracas", "quote": "Diagnosed with melanoma in 2017, he relapsed in 2018. After fervent prayer and treatment, he was discharged months later." },
+      { "name": "María Lara", "location": "Caracas", "quote": "Diagnosed with grade one cancer, she prayed intensely. 'I went for my tests and nothing showed up. Thanks be to God and to the Doctor.'" },
+      { "name": "Juan Díaz", "location": "Guayaquil, Ecuador", "quote": "I am infinitely grateful to Dr. José Gregorio Hernández for helping me with the problems I had with my heart and diabetes. Since becoming a devotee of Dr. José Gregorio Hernández Cisneros, I have drawn closer to God." },
+      { "name": "Efrén Cepeda", "location": "Ibarra, Ecuador", "quote": "I thank and congratulate the Rosas de Gregorio Group of Archidona, Ecuador, for their human warmth and magnificent service. I have notably recovered my health and received miracles in my life, along with my family." }
+    ]
+  },
+  "shareCta": {
+    "title": "Have you received a favor?",
+    "body": "If you or someone close to you has experienced a favor or healing through the intercession of San José Gregorio Hernández, we would love to hear your testimony. Your story can strengthen the faith of others.",
+    "button": "SHARE MY TESTIMONY"
+  }
+}

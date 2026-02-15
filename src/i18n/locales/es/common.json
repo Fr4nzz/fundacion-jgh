@@ -1,0 +1,42 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "suVida": "Su Vida",
+    "altares": "De los Altares",
+    "milagros": "Milagros",
+    "fundacion": "La Fundación",
+    "oracion": "Oración",
+    "donate": "DONAR"
+  },
+  "footer": {
+    "name": "Fundación Santísima Trinidad Dr. José Gregorio Hernández 3M",
+    "sede": "Sede Archidona",
+    "location": "Archidona, Napo, Ecuador",
+    "acuerdo": "Acuerdo Ministerial No. MIES-2021-036",
+    "followUs": "Síguenos",
+    "quote": "«La mayoría de estas personas no tienen recursos; no les voy a negar la consulta y no les voy a hacer pasar por la pena de decirme que no tienen dinero. Dios ayudará.»",
+    "quoteAttribution": "— San José Gregorio Hernández"
+  },
+  "donate": {
+    "modalTitle": "Continúa la obra del Médico de los Pobres.",
+    "modalBody": "José Gregorio Hernández nunca rechazó a un paciente. Compraba medicinas con su propio sueldo. Tu donación mantiene viva esa caridad en Ecuador.",
+    "bankLabel": "Banco Pichincha — Cuenta de Ahorros",
+    "beneficiary": "Beneficiario",
+    "accountNumber": "Nº de Cuenta",
+    "ruc": "RUC",
+    "copy": "Copiar número de cuenta",
+    "copied": "¡Copiado!",
+    "otherMeans": "¿Prefieres otro medio?",
+    "callUs": "Llámanos o escríbenos",
+    "everyDonation": "Toda donación, sin importar el monto, hace la diferencia.",
+    "questions": "¿Tienes preguntas?"
+  },
+  "stickyBanner": {
+    "text": "¿Deseas apoyar nuestra misión?",
+    "button": "DONAR AHORA"
+  },
+  "lang": {
+    "es": "Español",
+    "en": "English"
+  }
+}

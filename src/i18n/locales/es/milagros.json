@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "title": "Milagros",
+    "subtitle": "Dos milagros confirmados por el Vaticano. Más de 2.100 testimonios documentados. Y miles de fieles que saben, en su corazón, que el Doctor sigue atendiendo."
+  },
+  "miracles": [
+    {
+      "badge": "PRIMER MILAGRO",
+      "pullQuote": "«Quédate tranquila, todo va a salir bien.»",
+      "title": "Yaxury Solórzano (2017)",
+      "paragraphs": [
+        "El 10 de marzo de 2017, en el estado Guárico, Venezuela, Yaxury Solórzano Ortega, una niña de 10 años, recibió un disparo en la cabeza durante un asalto. Múltiples perdigones impactaron la región temporoparietal derecha, causando pérdida de masa cerebral, pérdida ósea y hemorragia severa.",
+        "Fue transportada durante más de cuatro horas por caminos difíciles hasta el Hospital Pablo Acosta Ortiz en San Fernando de Apure. No había neurocirujano disponible. Esperó 48 horas antes de ser operada — mucho más allá de la «hora dorada» crítica. El neurocirujano que finalmente la operó, Dr. Alexander Krinitzky, declaró después: «Científicamente, la herida era mortal desde el inicio.»",
+        "Su madre, Carmen Ortega, comenzó a rezar inmediatamente a José Gregorio Hernández. Durante la cirugía, relata que sintió una mano en su hombro y escuchó una voz que le dijo: «Quédate tranquila, todo va a salir bien.» También relata haber visto la figura de Hernández en la habitación del hospital.",
+        "Al cuarto día después de la cirugía, Yaxury comenzó a responder positivamente a todas las pruebas. A los 20 días, caminó fuera del hospital completamente curada, hablando con normalidad, sin ninguna discapacidad neurológica permanente.",
+        "La comisión médica del Vaticano, formada por siete doctores, confirmó por unanimidad en enero de 2020 que la curación no tenía explicación científica."
+      ]
+    },
+    {
+      "badge": "SEGUNDO MILAGRO",
+      "pullQuote": "De la muerte clínica a la vida plena",
+      "title": "Gonzalo Morales Divo",
+      "paragraphs": [
+        "Gonzalo Morales Divo, un empresario venezolano residente en Estados Unidos, sufrió un fallo multiorgánico catastrófico: corazón, hígado, riñones y cerebro, todos comprometidos simultáneamente. Los médicos pronosticaron daño cerebral irreversible.",
+        "Su familia rezó ocho días consecutivos a José Gregorio Hernández. Morales relató haber visto la imagen de José Gregorio dos veces durante su coma. En una semana, comenzó a recuperarse a un ritmo que asombró al equipo médico. En 2022, la Arquidiócesis de Miami certificó que la recuperación carecía de explicación científica.",
+        "Este segundo milagro abrió la puerta a la canonización."
+      ]
+    }
+  ],
+  "testimonials": {
+    "title": "Testimonios del pueblo",
+    "intro": "Más de 2.100 testimonios de favores y sanaciones están documentados en la causa de canonización. Estas son algunas voces:",
+    "items": [
+      { "name": "Yorgelis López", "location": "Caracas", "quote": "Mi hijo nació a las 26 semanas de embarazo. Está vivo gracias al Doctor." },
+      { "name": "Vicenta Cordero", "location": "Caracas, 1990", "quote": "Su hija de un año desarrolló neumonía que progresó a infección pulmonar severa. Los médicos dijeron que si el drenaje no funcionaba esa noche, no había esperanza. Rezó a José Gregorio. Su hija se recuperó completamente." },
+      { "name": "Carlos Fernández", "location": "Caracas", "quote": "Diagnosticado con melanoma en 2017, recayó en 2018. Tras oración ferviente y tratamiento, recibió el alta meses después." },
+      { "name": "María Lara", "location": "Caracas", "quote": "Diagnosticada con cáncer grado uno, oró intensamente. «Vine a mis estudios y no apareció nada. Gracias a Dios y al Doctor.»" },
+      { "name": "Juan Díaz", "location": "Guayaquil, Ecuador", "quote": "Le agradezco infinitamente al Dr. José Gregorio Hernández por ayudarme con el problema que tenía en mi corazón y diabetes. Desde que soy devoto del Dr. José Gregorio Hernández Cisneros me he acercado más a Dios." },
+      { "name": "Efrén Cepeda", "location": "Ibarra, Ecuador", "quote": "Agradezco y felicito al Grupo Rosas de Gregorio de Archidona, Ecuador, por su calidad humana y magnífica labor de servicio. He recuperado notoriamente mi salud y recibido milagros en mi vida, junto a mi familia." }
+    ]
+  },
+  "shareCta": {
+    "title": "¿Has recibido un favor?",
+    "body": "Si tú o alguien cercano ha experimentado un favor o sanación por intercesión de San José Gregorio Hernández, nos encantaría conocer tu testimonio. Tu historia puede fortalecer la fe de otros.",
+    "button": "COMPARTIR MI TESTIMONIO"
+  }
+}

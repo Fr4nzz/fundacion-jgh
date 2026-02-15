@@ -1,0 +1,75 @@
+{
+  "hero": {
+    "title": "Prayer",
+    "subtitle": "\"God will provide.\" — With those two words, San José Gregorio summed up his entire philosophy of life. Here you will find the prayers to ask for his intercession."
+  },
+  "prayers": [
+    {
+      "id": "oficial",
+      "title": "Official prayer (post-canonization)",
+      "text": "Good Father,\nthrough the intercession of San José Gregorio Hernández,\nwe ask that You grant us health of body and soul\nso that we may be witnesses of faith, hope, and charity,\ncommitted to building a world\nwhere Your truth, justice, and peace may reign.\nThrough Jesus Christ, our Lord.\nAmen."
+    },
+    {
+      "id": "causa",
+      "title": "Prayer of the cause",
+      "text": "Lord Jesus Christ,\nYou who instilled in Your servant José Gregorio\nsteadfastness in virtue,\npurity in his actions,\na great love for You,\nfor Your Most Holy Mother and for his neighbor,\ndeign to glorify him before Your Church.\n\nGrant that I, imitating his virtues,\nmay draw closer to You,\nand through the merits of Your Passion and Death,\ngrant me the grace I ask of You...\n\n(Make your petition in silence.)\n\nVirgin of Coromoto, Patroness of Venezuela,\nintercede for the glorification of your devotee\nJosé Gregorio Hernández. Amen.\n\nOur Father, Hail Mary, and Glory Be."
+    },
+    {
+      "id": "enfermos",
+      "title": "Prayer for the sick",
+      "text": "You, blessed servant of God,\nhear my cries, listen to my pleas\nand intercede before your Lord\nfor my swift recovery and my longed-for health.\n\nGenerous Dr. José Gregorio Hernández,\nfor your generosity with your patients,\nI place my trust in you\nthat you may be a faithful intermediary\nbefore our God, Our Lord,\nyour confidant and friend.\n\nDo not abandon me.\nI implore the Sacred Heart of Jesus and the Holy Spirit\nto enlighten the doctors,\nthat they may correctly identify my illness\nand find the medicines and treatments\nappropriate to cure me.\n\nTo my Mother, the Virgin Mary, I plead,\nthat she give me strength to endure with courage and hope\nall the discomforts of my illness\nand thus redeem myself from all my faults\nas my Lord Jesus suffered on the Cross.\n\nLord, I praise You and I bless You!\nGlory to You, Lord!\nI thank You for creating me, redeeming me, and making me a Christian.\nThank You, my Jesus. Thank You! Amen!\n\n(State your petition, imploring the miraculous mediation of Dr. José Gregorio Hernández, and pray three Our Fathers, three Hail Marys, and three Glory Be's.)"
+    },
+    {
+      "id": "diaria",
+      "title": "Daily prayer",
+      "text": "O Lord my God, You who can do all things\nand who have welcomed into Your bosom\nYour beloved servant José Gregorio,\nwho by Your great mercy\nYou gave the power to heal the sick in this world,\ngrant him, Lord, the grace to heal me,\nas a spiritual physician,\nmy soul and my body\nif it be for Your glory.\n\nI ask this of You, Lord my God,\nin the name of Your beloved Son\nwho taught us to pray saying:\nOur Father..."
+    },
+    {
+      "id": "juventud",
+      "title": "Prayer for the youth of Ecuador",
+      "text": "O Most Holy Trinity, God, one in essence and three in persons,\ngrant to the children and youth of Ecuador,\nas You granted to José Gregorio Hernández from his tender years,\nthe grace to love You above all things\nand to love their neighbor solely for Your love;\nkeep far from their minds and hearts\nerror, falsehood, deceit, selfishness,\nhatred, unhealthy envy,\nand the crude materialism that is causing so much harm to youth.\n\nGrant that our professionals may constantly keep in their minds\nthe example of José Gregorio, who devoted all his knowledge\nand his life to the service of his neighbors,\nespecially the poor, the sick\nlacking financial resources, and all those in need.\n\nHave mercy, Lord, on us\nand hear my humble prayer\nand the intercession of Your Servant\nJosé Gregorio Hernández Cisneros,\nDoctor of the Poor,\nand grant me the grace I ask of You in this prayer.\nAmen."
+    },
+    {
+      "id": "sanacion",
+      "title": "Healing prayer (Ecuadorian version)",
+      "text": "Holy Spirit, Dr. José Gregorio Hernández,\nspiritual physician, I invoke you and implore you\nto hear my pleas\nfor the health of (person's name),\nthat they may recover soon from their illness,\neven if little by little.\n\nIf this be so, I shall be wholly grateful to you\nand I will give a small alms\nto the person who most needs it\nand I will help your church\neven with the little I possess,\nwhere we venerate you in Ecuador eternally.\nAmen.\n\n(Also pray one Our Father, one Hail Mary, and one Glory Be.)"
+    }
+  ],
+  "novena": {
+    "title": "Novena to San José Gregorio Hernández",
+    "intro": "The complete novena consists of nine days of meditations addressing the Holy Trinity, the Eucharist, the Passion of Christ, repentance, the five wounds of Christ, and the Blessed Virgin Mary.",
+    "openingPrayerTitle": "Opening Prayer",
+    "dayPrefix": "Day",
+    "openingPrayer": "O Most Loving Trinity!:\nIn You I believe, in You I hope,\nand I love You with all my heart.\nI ask that You fill my soul with Your grace\nand keep me always in Your friendship.\n\nLord God, Almighty King!:\nIn Your hands all things are placed.\nIf You wish to save Your people\nthere is none who can resist Your will...\n\nWe adore You and bless You\nfor the extraordinary graces You granted\nto Your Servant José Gregorio,\nespecially for that of loving You\nabove all things\nand loving his neighbor as himself...\n\nDeign, Most Merciful Trinity,\nto hear Your Servant,\ngranting us the favor we ask\nif it be for Your greater glory and the good of our souls.\nWe ask this through the merits of Jesus Christ Our Lord.\nAmen.",
+    "days": [
+      { "day": 1, "theme": "God the Almighty Father — Praise and supplication" },
+      { "day": 2, "theme": "The Divine Word — The Eucharist and Communion" },
+      { "day": 3, "theme": "The Passion of Christ — The prophecies of the Prophet" },
+      { "day": 4, "theme": "Repentance — Meditation on Psalm 51 (Miserere)" },
+      { "day": 5, "theme": "The five wounds of Christ — The humanity and charity of JGH" },
+      { "day": 6, "theme": "The Holy Spirit — The gifts bestowed upon JGH" },
+      { "day": 7, "theme": "The Blessed Virgin Mary — The Magnificat" },
+      { "day": 8, "theme": "God the Protecting Father — Help for the poor" },
+      { "day": 9, "theme": "God the Redeeming Father — Final intercession" }
+    ]
+  },
+  "quotes": {
+    "title": "His words — Famous quotes",
+    "items": [
+      { "topic": "On charity", "text": "Most of these people have no means; I will not deny them a consultation, and I will not make them go through the embarrassment of telling me they have no money. God will provide." },
+      { "topic": "On vocation", "text": "I must go back to my town. In Isnotú there are no doctors, and my place is there, where one day my own mother asked me to return to relieve the suffering of the humble people of our land." },
+      { "topic": "On God", "text": "There is an infinitely powerful and wise being, creator of the admirably ordered universe we know. This being we call God." },
+      { "topic": "On truth", "text": "Good can only come from truth, never from error. Error is the poison of the intellect." },
+      { "topic": "On duty", "text": "In man, duty is the reason for rights, so that man has duties before he has rights." },
+      { "topic": "On human goodness", "text": "If in the world there are good people and bad, the bad are so because they made themselves bad; but the good are not so except with the help of God." },
+      { "topic": "On his mother", "text": "My mother taught me virtue from the cradle, raised me in the knowledge of God, and gave me charity as my guide." },
+      { "topic": "On goodness", "text": "A true man holds as his moral ideal to do good." }
+    ]
+  },
+  "hymn": {
+    "title": "Hymn to San José Gregorio Hernández",
+    "description": "The official beatification hymn, titled 'Siervo Digno y Bueno' (Worthy and Good Servant), was composed by Richard López with arrangements by Miguel Teixeira of the Music Ministry of the Basilica of Santa Teresa in Caracas.",
+    "chorus": "José Gregorio Hernández\ngives peace and comfort\nto all who suffer,\nhealth to the sick,\nand may I too,\nfollowing your example,\noffer to the Father\nall that I have.\nWorthy and good servant.",
+    "listenNote": "The complete hymn can be found on digital platforms (Spotify, YouTube) by searching for 'Himno al Doctor José Gregorio Hernández — MMBST.'"
+  }
+}

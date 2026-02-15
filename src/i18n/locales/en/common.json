@@ -1,0 +1,42 @@
+{
+  "nav": {
+    "home": "Home",
+    "suVida": "His Life",
+    "altares": "From the Altars",
+    "milagros": "Miracles",
+    "fundacion": "The Foundation",
+    "oracion": "Prayer",
+    "donate": "DONATE"
+  },
+  "footer": {
+    "name": "Fundación Santísima Trinidad Dr. José Gregorio Hernández 3M",
+    "sede": "Archidona Office",
+    "location": "Archidona, Napo, Ecuador",
+    "acuerdo": "Acuerdo Ministerial No. MIES-2021-036",
+    "followUs": "Follow Us",
+    "quote": "\u00abMost of these people have no means; I will not deny them a consultation, and I will not make them go through the embarrassment of telling me they have no money. God will provide.\u00bb",
+    "quoteAttribution": "— San José Gregorio Hernández"
+  },
+  "donate": {
+    "modalTitle": "Continue the work of the Doctor of the Poor.",
+    "modalBody": "José Gregorio Hernández never turned away a patient. He bought medicines with his own salary. Your donation keeps that charity alive in Ecuador.",
+    "bankLabel": "Banco Pichincha — Savings Account",
+    "beneficiary": "Beneficiary",
+    "accountNumber": "Account Number",
+    "ruc": "RUC",
+    "copy": "Copy account number",
+    "copied": "Copied!",
+    "otherMeans": "Prefer another method?",
+    "callUs": "Call or write to us",
+    "everyDonation": "Every donation, no matter the amount, makes a difference.",
+    "questions": "Have questions?"
+  },
+  "stickyBanner": {
+    "text": "Would you like to support our mission?",
+    "button": "DONATE NOW"
+  },
+  "lang": {
+    "es": "Español",
+    "en": "English"
+  }
+}

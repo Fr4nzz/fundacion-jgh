@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "The Foundation",
+    "subtitle": "Fundación Santísima Trinidad Dr. José Gregorio Hernández 3M — Archidona Office. Continuing the legacy of the holy doctor in the Ecuadorian Amazon."
+  },
+  "mission": {
+    "title": "Our mission",
+    "paragraphs": [
+      "San José Gregorio Hernández dedicated his life to healing those who could not pay. He bought medicines with his own money. He walked through the rain to visit the sick in their homes. He never charged a poor patient.",
+      "He died on his way to tend to a sick elderly woman, carrying medicines he had just bought himself.",
+      "That charity did not die with him. It lives on in every person who chooses to serve others in his name.",
+      "The Fundación Santísima Trinidad Dr. José Gregorio Hernández 3M was legally established in 2021 (Acuerdo Ministerial No. MIES-2021-036) — the same year the Doctor was beatified — with the purpose of improving the living conditions of those most in need in the Ecuadorian Amazon. From our headquarters in Archidona, province of Napo, we work so that those seeking relief from their physical ailments, and above all from ailments of the soul, may find in prayer and the intercession of 'Hermanito Gregorio' the strength they need.",
+      "With a presence at three offices nationwide — Archidona, Riobamba, and Quito — our Foundation keeps alive the legacy of the holy Doctor of the Poor."
+    ]
+  },
+  "quote": {
+    "text": "Most of these people have no means; I will not deny them a consultation, and I will not make them go through the embarrassment of telling me they have no money. God will provide.",
+    "attribution": "San José Gregorio Hernández"
+  },
+  "activities": {
+    "title": "What we do",
+    "items": [
+      {
+        "title": "Prayer and spiritual healing",
+        "description": "We hold community prayer gatherings where the Holy Rosary is prayed, the Word of God is reflected upon, the Chaplet of Divine Mercy is recited, and specific prayers to San José Gregorio Hernández are offered."
+      },
+      {
+        "title": "Social outreach to those most in need",
+        "description": "We bring joy and hope to the most vulnerable communities in our Amazon region. We carry out charitable deliveries in Cotundo, Archidona, Tena, and Puerto Napo."
+      },
+      {
+        "title": "Devotional materials",
+        "description": "We distribute free novenas, holy cards of the Holy Trinity, the Virgin Mary, and San José Gregorio Hernández, so that devotees can set up a small altar in their homes."
+      },
+      {
+        "title": "Nationwide presence",
+        "description": "The Foundation operates from three offices across Ecuador: Archidona (Napo), Riobamba (Chimborazo), and Quito (Pichincha)."
+      }
+    ]
+  },
+  "ecuadorConnection": {
+    "title": "A bond of blood and faith between Venezuela and Ecuador",
+    "paragraphs": [
+      "Few know that San José Gregorio Hernández has a blood tie to Ecuador. Through the Febres-Cordero family, who migrated from Venezuela, José Gregorio was a third cousin of Santo Hermano Miguel — Ecuador's only canonized saint — and a fourth-degree uncle of former president León Febres-Cordero Ribadeneyra.",
+      "Devotion to José Gregorio Hernández in Ecuador has deep roots: since 1982, the San Antonio de Padua Parish in Guayaquil has maintained a space dedicated to his veneration. Our Foundation operates from three offices nationwide — Archidona, Riobamba, and Quito — bringing the faith and charity of 'Hermanito Gregorio' to the corners of the Amazon and beyond.",
+      "Faith in the holy doctor knows no borders. Ecuador is fertile ground for his devotion."
+    ]
+  },
+  "donate": {
+    "title": "How you can help",
+    "heading": "Your donation continues the Doctor's work.",
+    "body": "José Gregorio Hernández never turned away a patient for lack of money. We follow his example. But to serve, we need your help.",
+    "otherWays": "Other ways to support:",
+    "otherItems": [
+      "Share our mission with your family and friends",
+      "Join our prayer activities",
+      "Send us your testimony of faith",
+      "Become a volunteer"
+    ],
+    "contact": "Contact us directly",
+    "bankLabel": "Banco Pichincha — Savings Account",
+    "accountLabel": "Account No.",
+    "donateNow": "DONATE NOW"
+  },
+  "legal": {
+    "title": "Transparency and legal standing",
+    "body": "The Fundación Santísima Trinidad Dr. José Gregorio Hernández 3M is a legally established organization in Ecuador, registered with the Ministry of Economic and Social Inclusion (MIES) under Acuerdo Ministerial No. MIES-2021-036.",
+    "boardTitle": "Board of Directors — Archidona Office",
+    "president": "President: Sr. José Amable Villarroel Trávez",
+    "secretary": "Secretary: Abg. Ximena Espín Pavón"
+  }
+}
