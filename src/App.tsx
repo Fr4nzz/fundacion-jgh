@@ -6,6 +6,7 @@ import AltaresPage from "@/pages/AltaresPage";
 import MilagrosPage from "@/pages/MilagrosPage";
 import FundacionPage from "@/pages/FundacionPage";
 import OracionPage from "@/pages/OracionPage";
+import GalleryPage from "@/pages/GalleryPage";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="milagros" element={<MilagrosPage />} />
           <Route path="la-fundacion" element={<FundacionPage />} />
           <Route path="oracion" element={<OracionPage />} />
+          <Route path="galeria" element={<GalleryPage />} />
         </Routes>
       </PageLayout>
     </HashRouter>

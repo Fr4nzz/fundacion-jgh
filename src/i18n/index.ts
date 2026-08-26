@@ -9,6 +9,7 @@ import esAltares from "./locales/es/altares.json";
 import esMilagros from "./locales/es/milagros.json";
 import esFundacion from "./locales/es/fundacion.json";
 import esOracion from "./locales/es/oracion.json";
+import esGallery from "./locales/es/gallery.json";
 
 import enCommon from "./locales/en/common.json";
 import enHome from "./locales/en/home.json";
@@ -17,6 +18,7 @@ import enAltares from "./locales/en/altares.json";
 import enMilagros from "./locales/en/milagros.json";
 import enFundacion from "./locales/en/fundacion.json";
 import enOracion from "./locales/en/oracion.json";
+import enGallery from "./locales/en/gallery.json";
 
 i18n
   .use(LanguageDetector)
@@ -31,6 +33,7 @@ i18n
         milagros: esMilagros,
         fundacion: esFundacion,
         oracion: esOracion,
+        gallery: esGallery,
       },
       en: {
         common: enCommon,
@@ -40,6 +43,7 @@ i18n
         milagros: enMilagros,
         fundacion: enFundacion,
         oracion: enOracion,
+        gallery: enGallery,
       },
     },
     lng: localStorage.getItem("lang") || "es",

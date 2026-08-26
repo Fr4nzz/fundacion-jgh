@@ -12,6 +12,7 @@ const NAV_LINKS = [
   { key: "milagros", to: "/milagros" },
   { key: "fundacion", to: "/la-fundacion" },
   { key: "oracion", to: "/oracion" },
+  { key: "gallery", to: "/galeria" },
 ] as const;
 
 interface NavbarProps {
@@ -75,7 +76,11 @@ export default function Navbar({ onDonate }: NavbarProps) {
           </Button>
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
+              <Button
+                variant="ghost"
+                size="icon"
+                aria-label={open ? t("nav.closeMenu") : t("nav.openMenu")}
+              >
                 {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
               </Button>
             </SheetTrigger>

@@ -1,0 +1,68 @@
+{
+  "hero": {
+    "eyebrow": "Community gallery",
+    "title": "A living record of faith and service",
+    "intro": "Moments of prayer, devotion, and preparation that reveal the shared life of our community.",
+    "scrollLabel": "Explore the gallery"
+  },
+  "chapters": {
+    "prayer": {
+      "number": "I",
+      "title": "Prayer",
+      "intro": "Thursday prayer brings voices, silence, and gestures of devotion together in one community space.",
+      "editorial": "Song accompanies the gathering and draws attention to the crucifix, candles, flowers, and devotional images."
+    },
+    "devotion": {
+      "number": "II",
+      "title": "Devotion and service",
+      "intro": "Care is expressed both in spaces of faith and in the attentive work of preparation."
+    },
+    "community": {
+      "number": "III",
+      "title": "Community",
+      "intro": "The gathering returns to shared prayer, a practice sustained by presence and companionship."
+    }
+  },
+  "items": {
+    "gathering": {
+      "theme": "Gathering",
+      "title": "Thursday Prayer Gathering",
+      "description": "A view of the community prayer gathering, with the assembly together and one person leading from the front.",
+      "alt": "People seated together during a prayer gathering, with one person leading from the front"
+    },
+    "songs": {
+      "theme": "Prayer",
+      "title": "Songs at Thursday Prayer",
+      "description": "The community gathers for song and prayer around a devotional setting with flowers, candles, and sacred images.",
+      "label": "Play Songs at Thursday Prayer"
+    },
+    "flowers": {
+      "theme": "Devotion",
+      "title": "Floral Offering in Puerto Napo",
+      "description": "Flowers arranged beside the image of José Gregorio Hernández and the altar at the church in Puerto Napo.",
+      "label": "Play Floral Offering in Puerto Napo"
+    },
+    "preparation": {
+      "theme": "Service",
+      "title": "Preparing Cotton and Gauze",
+      "description": "Two volunteers carefully organize cotton and gauze as part of the foundation’s preparation work.",
+      "label": "Play Preparing Cotton and Gauze"
+    },
+    "prayer": {
+      "theme": "Community",
+      "title": "Thursday Community Prayer",
+      "description": "The community shares Thursday prayer before a devotional setting prepared with candles and flowers.",
+      "label": "Play Thursday Community Prayer"
+    }
+  },
+  "meta": {
+    "photo": "Photograph",
+    "video": "Video",
+    "duration": "Duration {{duration}}"
+  },
+  "closing": {
+    "eyebrow": "Faith shared",
+    "title": "A story shaped by presence",
+    "body": "This selection brings together simple gestures of prayer, care, and service that shape the foundation’s daily life."
+  }
+}

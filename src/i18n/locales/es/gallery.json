@@ -1,0 +1,68 @@
+{
+  "hero": {
+    "eyebrow": "Galería comunitaria",
+    "title": "Una memoria viva de fe y servicio",
+    "intro": "Momentos de oración, devoción y preparación que muestran la vida compartida de nuestra comunidad.",
+    "scrollLabel": "Recorrer la galería"
+  },
+  "chapters": {
+    "prayer": {
+      "number": "I",
+      "title": "Oración",
+      "intro": "La oración del jueves reúne voces, silencios y gestos de devoción en un mismo espacio comunitario.",
+      "editorial": "El canto acompaña el encuentro y orienta la mirada hacia el crucifijo, las velas, las flores y las imágenes devocionales."
+    },
+    "devotion": {
+      "number": "II",
+      "title": "Devoción y servicio",
+      "intro": "El cuidado se expresa tanto en los espacios de fe como en el trabajo atento de preparación."
+    },
+    "community": {
+      "number": "III",
+      "title": "Comunidad",
+      "intro": "El encuentro vuelve a la oración compartida: una práctica sostenida por la presencia y la compañía."
+    }
+  },
+  "items": {
+    "gathering": {
+      "theme": "Encuentro",
+      "title": "Encuentro de oración del jueves",
+      "description": "Una vista del encuentro comunitario de oración, con la asamblea reunida y una persona guiando desde el frente.",
+      "alt": "Personas reunidas en sillas durante un encuentro de oración, con una persona guiando desde el frente"
+    },
+    "songs": {
+      "theme": "Oración",
+      "title": "Cantos en la oración del jueves",
+      "description": "La comunidad se reúne en torno al canto, la oración y un espacio preparado con flores, velas e imágenes devocionales.",
+      "label": "Reproducir Cantos en la oración del jueves"
+    },
+    "flowers": {
+      "theme": "Devoción",
+      "title": "Ofrenda floral en Puerto Napo",
+      "description": "Flores dispuestas junto a la imagen de José Gregorio Hernández y el altar de la iglesia de Puerto Napo.",
+      "label": "Reproducir Ofrenda floral en Puerto Napo"
+    },
+    "preparation": {
+      "theme": "Servicio",
+      "title": "Preparación de algodón y gasas",
+      "description": "Dos voluntarias organizan cuidadosamente algodón y gasas como parte del trabajo de preparación de la fundación.",
+      "label": "Reproducir Preparación de algodón y gasas"
+    },
+    "prayer": {
+      "theme": "Comunidad",
+      "title": "Oración comunitaria del jueves",
+      "description": "La comunidad comparte la oración del jueves ante un espacio devocional preparado con velas y flores.",
+      "label": "Reproducir Oración comunitaria del jueves"
+    }
+  },
+  "meta": {
+    "photo": "Fotografía",
+    "video": "Video",
+    "duration": "Duración {{duration}}"
+  },
+  "closing": {
+    "eyebrow": "Fe compartida",
+    "title": "Una historia hecha de presencia",
+    "body": "Esta selección reúne gestos sencillos de oración, cuidado y servicio que dan forma a la vida cotidiana de la fundación."
+  }
+}
