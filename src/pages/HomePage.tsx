@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "motion/react";
-import { Cross, BookOpen, Heart } from "lucide-react";
+import { ArrowRight, Cross, BookOpen, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router";
@@ -15,16 +15,24 @@ import TextWithRefs from "@/components/shared/TextWithRefs";
 import { useCountUp } from "@/hooks/useCountUp";
 import { useDirectionalInView } from "@/hooks/useDirectionalInView";
 import { fadeUp, staggerContainer, hoverLift } from "@/lib/animations";
+import { GALLERY_PREVIEW_IMAGE } from "@/lib/galleryMedia";
 
 const PILLAR_ICONS = [Cross, BookOpen, Heart] as const;
 const PILLAR_KEYS = ["faith", "science", "charity"] as const;
+
+interface Reference {
+  source: string;
+  desc: string;
+  url: string;
+  [key: string]: unknown;
+}
 
 export default function HomePage() {
   const { t } = useTranslation("home");
   const [donateOpen, setDonateOpen] = useState(false);
   const { count, ref: counterRef } = useCountUp(2100, 2000);
   const { ref: ctaRef, isInView: ctaInView } = useDirectionalInView("-80px");
-  const references = t("references.items", { returnObjects: true }) as any[];
+  const references = t("references.items", { returnObjects: true }) as Reference[];
 
   return (
     <>
@@ -82,6 +90,37 @@ export default function HomePage() {
           <div className="mx-auto mt-8 h-[2px] w-16 rounded-full bg-gradient-to-r from-transparent via-secondary to-transparent" />
         </div>
       </SectionContainer>
+
+      {/* Gallery invitation */}
+      <section className="relative border-y border-primary/10 bg-white/35" data-home-gallery-invitation>
+        <div className="mx-auto grid max-w-4xl items-center gap-8 px-6 py-12 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:py-14">
+          <div className="overflow-hidden rounded-2xl border border-white/80 shadow-[0_20px_55px_rgba(36,65,101,0.14)]">
+            <img
+              src={GALLERY_PREVIEW_IMAGE}
+              alt={t("galleryInvitation.alt")}
+              className="aspect-[4/3] w-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-primary">
+              {t("galleryInvitation.eyebrow")}
+            </p>
+            <h2 className="mt-3 font-serif text-3xl font-semibold leading-tight text-foreground">
+              {t("galleryInvitation.title")}
+            </h2>
+            <p className="mt-4 text-base leading-7 text-muted-foreground">
+              {t("galleryInvitation.body")}
+            </p>
+            <Button asChild variant="outline" className="mt-6 border-primary/25 bg-white/60 text-primary hover:bg-white">
+              <Link to="/galeria">
+                {t("galleryInvitation.button")}
+                <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
 
       {/* Donation CTA */}
       <section className="relative overflow-hidden bg-gradient-to-br from-[#2A4F7A] via-[#345f8f] to-[#3B6B9C] text-white">
@@ -147,7 +186,7 @@ export default function HomePage() {
 
       <ReferencesSection
         title={t("references.title")}
-        items={t("references.items", { returnObjects: true }) as any[]}
+        items={references}
       />
 
       <DonationModal open={donateOpen} onOpenChange={setDonateOpen} />

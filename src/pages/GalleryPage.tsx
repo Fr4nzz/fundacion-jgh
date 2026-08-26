@@ -184,11 +184,11 @@ export default function GalleryPage() {
             initial={false}
             transition={transition}
             viewport={{ once: true, amount: 0.1 }}
-            className="mt-8 grid items-start gap-10 md:grid-cols-2 md:gap-10 lg:gap-14"
+            className="mx-auto mt-8 grid max-w-[43rem] items-start gap-10 md:grid-cols-2 md:gap-8 lg:gap-12"
             data-gallery-content="devotion"
           >
-            <MediaFigure item={mediaById.flowers} className="mx-auto w-full max-w-[20rem] md:mx-0" />
-            <MediaFigure item={mediaById.preparation} className="mx-auto w-full max-w-[20rem] md:mx-0 md:justify-self-end" />
+            <MediaFigure item={mediaById.flowers} className="mx-auto w-full max-w-[20rem]" />
+            <MediaFigure item={mediaById.preparation} className="mx-auto w-full max-w-[20rem]" />
           </motion.div>
         </section>
       </div>

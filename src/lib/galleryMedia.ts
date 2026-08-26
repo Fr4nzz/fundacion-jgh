@@ -14,11 +14,13 @@ function mediaUrl(filename: string) {
   return `${MEDIA_ORIGIN}${filename}`;
 }
 
+export const GALLERY_PREVIEW_IMAGE = mediaUrl("thursday-prayer-gathering.webp");
+
 export const GALLERY_MEDIA: GalleryMediaItem[] = [
   {
     id: "gathering",
     kind: "image",
-    src: mediaUrl("thursday-prayer-gathering.webp"),
+    src: GALLERY_PREVIEW_IMAGE,
   },
   {
     id: "songs",

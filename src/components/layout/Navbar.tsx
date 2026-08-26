@@ -45,7 +45,7 @@ export default function Navbar({ onDonate }: NavbarProps) {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden items-center gap-1 md:flex">
+        <nav className="hidden items-center gap-1 lg:flex">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.key}
@@ -69,7 +69,7 @@ export default function Navbar({ onDonate }: NavbarProps) {
         </nav>
 
         {/* Mobile nav */}
-        <div className="flex items-center gap-2 md:hidden">
+        <div className="flex items-center gap-2 lg:hidden">
           <LanguageToggle />
           <Button size="sm" onClick={onDonate}>
             {t("nav.donate")}
@@ -84,14 +84,18 @@ export default function Navbar({ onDonate }: NavbarProps) {
                 {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-64 pt-12 glass-strong">
+            <SheetContent
+              side="right"
+              overlayClassName="bg-[#102744]/60 backdrop-blur-[2px]"
+              className="w-[min(20rem,88vw)] border-l border-primary/15 bg-[#f7fafc] pt-12 text-foreground shadow-[-24px_0_60px_rgba(16,39,68,0.24)]"
+            >
               <SheetTitle className="sr-only">Navegación</SheetTitle>
               <nav className="flex flex-col gap-1">
                 <Link
                   to="/"
                   onClick={() => setOpen(false)}
-                  className={`rounded-lg px-4 py-2.5 text-base no-underline transition-all duration-300 hover:bg-white/40 ${
-                    isActive("/") ? "text-primary font-semibold bg-white/30" : "text-foreground"
+                  className={`min-h-11 rounded-lg px-4 py-2.5 text-base no-underline transition-colors duration-200 hover:bg-primary/[0.07] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 ${
+                    isActive("/") ? "bg-primary/10 font-semibold text-primary" : "text-foreground"
                   }`}
                 >
                   {t("nav.home")}
@@ -101,9 +105,9 @@ export default function Navbar({ onDonate }: NavbarProps) {
                     key={link.key}
                     to={link.to}
                     onClick={() => setOpen(false)}
-                    className={`rounded-lg px-4 py-2.5 text-base no-underline transition-all duration-300 hover:bg-white/40 ${
+                    className={`min-h-11 rounded-lg px-4 py-2.5 text-base no-underline transition-colors duration-200 hover:bg-primary/[0.07] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 ${
                       isActive(link.to)
-                        ? "text-primary font-semibold bg-white/30"
+                        ? "bg-primary/10 font-semibold text-primary"
                         : "text-foreground"
                     }`}
                   >

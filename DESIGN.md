@@ -78,6 +78,7 @@
   - Use serif headings and short italic editorial lines; use sans-serif captions and controls.
 - Spacing/layout rhythm:
   - Generous section spacing, narrow reading measures, and a controlled desktop editorial spread. Avoid repeating identical card gaps.
+  - Paired portrait media belongs in one centered editorial group: cap the group near `43rem`, each portrait near `20rem`, and the desktop inter-item gap near `3rem`. Never distribute narrow portrait media to opposite edges of the full content container.
 - Shape/radius/elevation:
   - Existing rounded surfaces and subtle shadows; media frames may use moderate radius and fine gold/blue rules. Avoid heavy card chrome.
 - Motion:
@@ -93,6 +94,7 @@
   - `GalleryPage` and a small structured gallery data model.
   - A reusable editorial media figure capable of image/video rendering, poster support, bilingual labels, native controls, and portrait/landscape framing.
   - `Navbar` and i18n registration receive minimal additions.
+  - Home Gallery discovery sits between community evidence/statistics and the donation CTA, using one existing R2 image and restrained secondary emphasis.
 - Variants and states:
   - Featured image, portrait video, and standard editorial video arrangements; native playing/paused/error behavior.
 - Token/component ownership:
@@ -105,6 +107,7 @@
   - All navigation and native video controls remain keyboard-operable; visible `:focus-visible` rings must not be removed.
 - Contrast/readability:
   - Captions use dark text on warm/light fields or white on deep blue with sufficient contrast. Gold is decorative/accent, not body text on white.
+  - Navigation drawers use opaque reading surfaces with a clearly separating backdrop; translucency is reserved for noncritical decorative layers.
 - Screen-reader semantics:
   - One page `h1`; logical heading order; gallery media as `figure`/`figcaption`; honest image alt text; descriptive video `aria-label`; decorative marks hidden.
 - Reduced motion and sensory considerations:
@@ -113,8 +116,10 @@
 ## Responsive behavior
 - Supported breakpoints/devices:
   - Current Tailwind breakpoints, with explicit checks near 390px mobile and 1440px desktop.
+  - The navigation drawer remains the primary navigation surface below `lg` so the bilingual six-link header does not compress at tablet widths.
 - Layout adaptations:
   - Desktop uses one wide feature followed by alternating/asymmetric editorial pairs.
+  - Paired portrait media remains a centered two-column group at tablet/desktop widths and becomes a single column below `md`.
   - Mobile becomes a deliberate single-column sequence with media-first ordering, consistent caption spacing, and portrait videos constrained to a comfortable viewport height.
 - Touch/hover differences:
   - Native video controls and navigation remain touch-friendly; hover embellishments must not carry unique meaning.
